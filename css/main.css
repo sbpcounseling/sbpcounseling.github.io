@@ -217,6 +217,10 @@ letter-spacing: 1px;
 width: auto;
 }
 
+.bnav li a{
+display: block;
+}
+
 .bnav:after {
   background-color: #383838;
   position: absolute;
