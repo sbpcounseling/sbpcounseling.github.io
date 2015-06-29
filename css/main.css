@@ -424,9 +424,9 @@ width: 73%;
     }
     
     #text_welcome{
-    margin: 20px 10px 10px 0px;
+    margin: 20px 10px 10px 40px;
     text-align: center;
-    width: 100%;
+    width: 90%;
     }
     
 }
