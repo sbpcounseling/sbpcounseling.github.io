@@ -315,13 +315,13 @@ width: auto;
 @media screen and (min-width: 960px) and (max-height: 601px){
 
     #landing_title{
-    top: 180px;
+    top: 200px;
     font-size: 40px;
     letter-spacing: 4px;
     }
     
     #landing_subtitle{
-    top: 310px;
+    top: 330px;
     font-size: 20px;
     font-weight: 600;
     }
