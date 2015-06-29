@@ -236,14 +236,14 @@ width: auto;
 /*------iPhone 4 and 5 CSS------*/
 
     #landing_title{
-    top: 300px;
-    font-size: 15px;
+    top: 280px;
+    font-size: 12px;
     letter-spacing: 1px;
     }
     
     #landing_subtitle{
-    top: 400px;
-    font-size: 12px;
+    top: 380px;
+    font-size: 10px;
     font-weight: 600;
     }
 
