@@ -173,7 +173,6 @@ padding: 10px;
 position: fixed;
 text-align: center;
 top: 50px;
-margin: 0 auto;
 transition: .5s all;
 width: 210px;
 z-index: 2000;
@@ -214,15 +213,15 @@ width: auto;
   background-color: #383838;
   position: absolute;
   content: '';
-  width: 1.7em;
+  width: 28px;
   height: 4px;
   display: block;
-  margin: 0px 30px;
+  margin: 0 29px;
   border-top: 4px solid white;
   border-bottom: 12px double white; 
-  opacity: .9;
+  opacity: 0.5;
   top: 100px;
-  transition: .2s all;
+  transition: .3s all;
   cursor: pointer;
 }
 .bnav:hover:after {
@@ -265,7 +264,7 @@ width: auto;
 /*------Cellphone CSS------*/
     
     .grow_border{
-    top: 300px;
+    top: 200px;
     }
 
     #landing_title{
