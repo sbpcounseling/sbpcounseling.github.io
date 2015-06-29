@@ -270,7 +270,7 @@ width: auto;
 
 /*------Horizontal Cellphone View------*/
 /*------For all devices smaller than an iPhone 6------*/
-@media screen and (max-width: 670px) and (max-height: 380px){
+@media screen and (max-width: 670px) and (max-height: 395px){
 
     #landing_title{
     top: 120px;
@@ -311,7 +311,21 @@ width: auto;
 }
 
 /*------Horizontal Tablet View------*/
+/*------Nexus 7 Tablet View------*/
+@media screen and (min-width: 960px) and (max-height: 601px){
 
+    #landing_title{
+    top: 180px;
+    font-size: 40px;
+    letter-spacing: 4px;
+    }
+    
+    #landing_subtitle{
+    top: 310px;
+    font-size: 20px;
+    font-weight: 600;
+    }
+}
 
 
 /*------End of Tablet CSS------*/
