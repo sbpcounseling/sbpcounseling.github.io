@@ -153,6 +153,9 @@ animation: grow 2s ease-in-out forwards;
 
 .bnav {
 align-content:flex-start;
+-webkit-box-shadow: -17px 14px 17px -4px rgba(34,34,34,1);
+-moz-box-shadow: -17px 14px 17px -4px rgba(34,34,34,1);
+box-shadow: -17px 14px 17px -4px rgba(34,34,34,1);
 display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
 display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
 display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -169,7 +172,8 @@ list-style: none;
 padding: 10px;
 position: fixed;
 text-align: center;
-top: 0;
+top: 50px;
+margin: 0 auto;
 transition: .5s all;
 width: 210px;
 z-index: 2000;
