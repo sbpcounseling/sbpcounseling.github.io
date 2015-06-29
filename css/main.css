@@ -236,6 +236,7 @@ width: auto;
 /*------iPhone 4 and 5 CSS------*/
 
     #landing_title{
+    margin-left: -15px;
     top: 280px;
     font-size: 12px;
     letter-spacing: 1px;
