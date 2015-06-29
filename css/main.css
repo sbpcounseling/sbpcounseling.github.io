@@ -141,33 +141,60 @@ animation: grow 2s ease-in-out forwards;
 
 /*------MEDIA QUERY CSS------*/
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 599px) and (max-height: 750px){
 /*------Cellphone CSS------*/
     
     .grow_border{
-    top: 280px;
+    top: 240px;
     }
 
     #landing_title{
     font-size: 15px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     }
     
     #landing_subtitle{
-    top: 380px;
+    top: 335px;
+    font-size: 14px;
+    font-weight: 600;
     }
 }
+
+/*------Horizontal Cellphone View------*/
+
+
 /*------End of Cellphone CSS------*/
 
-@media screen and (max-width: 600px){
+
 /*------Tablet CSS------*/
 
+@media screen and (min-width: 600px) and (max-width: 800px) and (min-height: 751px) and (max-height: 1100px){
+/*------Cellphone CSS------*/
+    
+    .grow_border{
+    top: 300px;
+    }
+
+    #landing_title{
+    font-size: 30px;
+    letter-spacing: 1px;
+    }
+    
+    #landing_subtitle{
+    top: 420px;
+    font-size: 16px;
+    font-weight: 600;
+    }
 }
+
+/*------Horizontal Tablet View------*/
+
+
+
 /*------End of Tablet CSS------*/
 
-@media screen and (max-width: 959px){
+
 /*------Small Browser CSS------*/
 
-}
 
 /*------End of Small Browser CSS------*/
