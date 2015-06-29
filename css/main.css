@@ -241,12 +241,13 @@ width: auto;
     }
 
     #landing_title{
-    font-size: 15px;
+    top: 140px;
+    font-size: 20px;
     letter-spacing: 1px;
     }
     
     #landing_subtitle{
-    top: 335px;
+    top: 235px;
     font-size: 14px;
     font-weight: 600;
     }
