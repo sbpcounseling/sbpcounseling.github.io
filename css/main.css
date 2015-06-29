@@ -31,6 +31,13 @@ III.    Navigation Bar CSS
 /* ----------- General CSS ---------- */
 
 @charset "UTF-8";
+
+body{
+    border-radius: 0.4rem 0.4rem 0.2rem 0.2rem;
+    font-family: Open Sans, sans-serif;
+    height: 100%;
+    overflow-x: hidden; 
+}
 /* ----------- End of General CSS ---------- */
 
 /* ----------- Begininng of Landing Panel CSS ---------- */
@@ -137,6 +144,87 @@ animation: grow 2s ease-in-out forwards;
 
 
 /* ----------- End of Landing Panel CSS ---------- */
+
+/* ----------- Beginning of Navigation CSS ---------- */
+
+#navmenu { margin: 0 auto; margin-bottom: 200px;}
+.bottomnav { color: #d0d0d0; text-decoration: none; transition: .2s all;}
+.bottomnav:hover { color: #fff; text-decoration: none; }
+
+.bnav {
+align-content:flex-start;
+display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+display: -ms-flexbox;      /* TWEENER - IE 10 */
+display: -webkit-flex;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+height: 100px;
+border-radius: 0.4rem 0.4rem 0.2rem 0.2rem;
+background-color: #383838;
+border-radius: 3px;
+left: -346px;
+list-style: none;
+padding: 10px;
+position: fixed;
+text-align: center;
+top: 0;
+transition: .5s all;
+width: 365px;
+z-index: 2000;
+}
+
+.bnav:hover {
+  left: 8px;
+}
+
+.bnav i{
+margin-top: 2px;
+display: block; 
+float: left;
+width: 50px;
+height: 20px;
+text-align: center;
+}
+
+
+.bnav li {
+display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+display: -ms-flexbox;      /* TWEENER - IE 10 */
+display: -webkit-flex;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+text-align: left;
+margin: 0px;
+padding-top: 5px;
+text-transform: uppercase;
+letter-spacing: 1px;
+width: auto;
+}
+
+.bnav:after {
+  position: absolute;
+  content: '';
+  width: 1.7em;
+  height: 4px;
+  display: block;
+  margin: 0px 34.5px;
+  border-top: 4px solid white;
+  border-bottom: 12px double white; 
+  opacity: .5;
+  top: 50px;
+  transition: .2s all;
+  cursor: pointer;
+}
+.bnav:hover:after {
+  opacity: 1;
+}
+
+/* ----------- End of Navigation CSS ---------- */
 
 
 /*------MEDIA QUERY CSS------*/
