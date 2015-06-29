@@ -141,7 +141,7 @@ animation: grow 2s ease-in-out forwards;
 
 /*------MEDIA QUERY CSS------*/
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 420px){
 /*------Cellphone CSS------*/
     
     .grow_border{
