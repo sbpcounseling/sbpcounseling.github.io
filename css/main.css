@@ -62,7 +62,7 @@ text-align: center;
 
 #landing_title{
 display: inline-block;
-font-size: 3.2rem;
+font-size: 4vw;
 margin-bottom: 1.618rem;
 text-transform: uppercase;
 }
@@ -70,17 +70,17 @@ text-transform: uppercase;
 #landing_subtitle{
 display: block;
 position: absolute;
-top: 53vh;
+top: 480px;
 left: 0;
 right:0;
 margin: 0 auto;
-width: 40vw;
+width: 100%;
 }
 
 .grow_border{
 right: 0;
 left: 0;
-top: 33vh;
+top: 330px;
 margin: 0 auto;
 width: 50vw;
 position: absolute;
@@ -137,3 +137,27 @@ animation: grow 2s ease-in-out forwards;
 
 
 /* ----------- End of Landing Panel CSS ---------- */
+
+
+/*------MEDIA QUERY CSS------*/
+
+@media screen and (max-width: 400px){
+/*------Cellphone CSS------*/
+    
+    
+
+}
+/*------End of Cellphone CSS------*/
+
+@media screen and (max-width: 600px){
+/*------Tablet CSS------*/
+
+}
+/*------End of Tablet CSS------*/
+
+@media screen and (max-width: 959px){
+/*------Small Browser CSS------*/
+
+}
+
+/*------End of Small Browser CSS------*/
