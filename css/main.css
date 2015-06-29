@@ -144,8 +144,18 @@ animation: grow 2s ease-in-out forwards;
 @media screen and (max-width: 400px){
 /*------Cellphone CSS------*/
     
-    
+    .grow_border{
+    top: 280px;
+    }
 
+    #landing_title{
+    font-size: 15px;
+    letter-spacing: 3px;
+    }
+    
+    #landing_subtitle{
+    top: 380px;
+    }
 }
 /*------End of Cellphone CSS------*/
 
