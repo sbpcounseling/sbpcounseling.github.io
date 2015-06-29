@@ -236,7 +236,7 @@ width: auto;
 /*------iPhone 4 and 5 CSS------*/
 
     .grow_border{
-    text-indent: 0px;
+    text-indent: -3px;
     }
     
     #landing_title{
