@@ -40,6 +40,7 @@ body{
 }
 
 header{
+background-color: #383838;
 width: 100%;
 min-height: 100px;
 padding: 30px 0px;
@@ -286,7 +287,27 @@ flex-direction: row;
 flex-wrap: wrap;
 }
 
+#sbplogo{
+background-image: url(../images/sbpschoollogo.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+display: block;
+height: 85px;
+margin-left: 50px;
+width: 250px;
+}
 
+#text_welcome{
+color: #ddd;
+font-size: 16px;
+font-style: italic;
+font-weight: 200;
+line-height: 20px;
+margin: -50px 0 0 340px;
+text-align: left;
+width: 73%;
+}
 
 /* ----------- End of First Content Panel CSS ---------- */
 
@@ -350,7 +371,7 @@ flex-wrap: wrap;
 
 /*------Tablet CSS------*/
 
-@media screen and (min-width: 743px) and (max-width: 980px) and (max-height: 1100px){
+@media screen and (min-width: 743px) and (max-width: 1280px) and (max-height: 1100px){
 /*------Cellphone CSS------*/
 
     .grow_border{
@@ -368,11 +389,16 @@ flex-wrap: wrap;
     font-size: 20px;
     font-weight: 600;
     }
+    #text_welcome{
+    margin: -55px 0 0 340px;
+    text-align: left;
+    width: 60%;
+}
 }
 
 /*------Horizontal Tablet View------*/
 /*------Nexus 7 Tablet View------*/
-@media screen and (min-width: 960px) and (max-height: 601px){
+@media screen and (min-width: 960px) and (max-width: 1260px) and (max-height: 601px){
 
     #landing_title{
     top: 200px;
@@ -388,3 +414,21 @@ flex-wrap: wrap;
 }
 
 /*------End of Tablet CSS------*/
+
+/*------Beginning of Small Browser CSS------*/
+@media screen and (max-width: 850px) and (max-height: 1100px){
+
+    #sbplogo{
+    margin: 0 auto;
+    width: 100%;
+    }
+    
+    #text_welcome{
+    margin: 20px 10px 10px 0px;
+    text-align: center;
+    width: 100%;
+    }
+    
+}
+
+/*------End of Small Browser CSS------*/
