@@ -233,21 +233,17 @@ width: auto;
 
 /*------MEDIA QUERY CSS------*/
 
-@media screen and (max-width: 599px) and (max-height: 750px){
+@media screen and (max-width: 742px) and (max-height: 1110px){
 /*------Cellphone CSS------*/
-    
-    .grow_border{
-    top: 240px;
-    }
 
     #landing_title{
-    top: 140px;
+    top: 300px;
     font-size: 20px;
     letter-spacing: 1px;
     }
     
     #landing_subtitle{
-    top: 235px;
+    top: 400px;
     font-size: 14px;
     font-weight: 600;
     }
@@ -261,21 +257,20 @@ width: auto;
 
 /*------Tablet CSS------*/
 
-@media screen and (min-width: 600px) and (max-width: 800px) and (min-height: 751px) and (max-height: 1100px){
+@media screen and (min-width: 743px) and (max-width: 980px) and (max-height: 1100px){
 /*------Cellphone CSS------*/
     
-    .grow_border{
-    top: 200px;
-    }
+
 
     #landing_title{
-    font-size: 30px;
-    letter-spacing: 1px;
+    top: 280px;
+    font-size: 40px;
+    letter-spacing: 4px;
     }
     
     #landing_subtitle{
-    top: 420px;
-    font-size: 16px;
+    top: 410px;
+    font-size: 20px;
     font-weight: 600;
     }
 }
