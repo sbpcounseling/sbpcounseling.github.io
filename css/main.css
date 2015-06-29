@@ -175,19 +175,19 @@ height: 200px;
 border-radius: 0.4rem 0.4rem 0.2rem 0.2rem;
 background-color: #383838;
 border-radius: 3px;
-left: -194px;
+left: -198px;
 list-style: none;
 padding: 10px;
 position: fixed;
 text-align: center;
 top: 50px;
 transition: .5s all;
-width: 210px;
+width: 218px;
 z-index: 2000;
 }
 
 .bnav:hover {
-  left: 8px;
+  left: 0px;
 }
 
 .bnav i{
@@ -228,7 +228,7 @@ display: block;
   content: '';
   width: 28px;
   height: 4px;
-    left: 168px;
+    left: 174px;
   display: block;
   margin: 0 29px;
   border-top: 4px solid white;
