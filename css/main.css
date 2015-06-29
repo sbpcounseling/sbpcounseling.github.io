@@ -168,13 +168,14 @@ display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
 display: -ms-flexbox;      /* TWEENER - IE 10 */
 display: -webkit-flex;
 display: flex;
-flex-direction: row;
+flex-direction: column;
+-webkit-flex-flow: column;
 flex-wrap: wrap;
 height: 200px;
 border-radius: 0.4rem 0.4rem 0.2rem 0.2rem;
 background-color: #383838;
 border-radius: 3px;
-left: -193px;
+left: -194px;
 list-style: none;
 padding: 10px;
 position: fixed;
@@ -205,9 +206,9 @@ display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
 display: -ms-flexbox;      /* TWEENER - IE 10 */
 display: -webkit-flex;
 display: flex;
-flex-direction: row;
+flex-direction:column;
 flex-wrap: wrap;
--webkit-flex-flow: row wrap;
+-webkit-flex-flow: column;
 justify-content: center;
 text-align: left;
 margin: 0px;
@@ -227,6 +228,7 @@ display: block;
   content: '';
   width: 28px;
   height: 4px;
+    left: 168px;
   display: block;
   margin: 0 29px;
   border-top: 4px solid white;
