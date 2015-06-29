@@ -232,6 +232,20 @@ width: auto;
 
 
 /*------MEDIA QUERY CSS------*/
+@media screen and (max-width: 330px) and (max-height: 570px){
+/*------iPhone 4 and 5 CSS------*/
+
+    #landing_title{
+    top: 300px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    }
+    
+    #landing_subtitle{
+    top: 400px;
+    font-size: 12px;
+    font-weight: 600;
+    }
 
 @media screen and (max-width: 742px) and (max-height: 1110px){
 /*------Cellphone CSS------*/
