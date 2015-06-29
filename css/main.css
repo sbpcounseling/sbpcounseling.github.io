@@ -160,18 +160,18 @@ display: -webkit-flex;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-height: 100px;
+height: 200px;
 border-radius: 0.4rem 0.4rem 0.2rem 0.2rem;
 background-color: #383838;
 border-radius: 3px;
-left: -346px;
+left: -193px;
 list-style: none;
 padding: 10px;
 position: fixed;
 text-align: center;
 top: 0;
 transition: .5s all;
-width: 365px;
+width: 210px;
 z-index: 2000;
 }
 
@@ -207,16 +207,17 @@ width: auto;
 }
 
 .bnav:after {
+  background-color: #383838;
   position: absolute;
   content: '';
   width: 1.7em;
   height: 4px;
   display: block;
-  margin: 0px 34.5px;
+  margin: 0px 30px;
   border-top: 4px solid white;
   border-bottom: 12px double white; 
-  opacity: .5;
-  top: 50px;
+  opacity: .9;
+  top: 100px;
   transition: .2s all;
   cursor: pointer;
 }
