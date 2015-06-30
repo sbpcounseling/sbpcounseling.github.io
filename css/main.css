@@ -308,23 +308,33 @@ display: -webkit-flex;
 
 @media all and (min-width: 600px) {
   .aside {
+    -webkit-flex:1 auto;
+    -ms-flex: 1 auto;
     flex: 1 auto;
   }
 }
 @media all and (min-width: 800px) {
   #mission_panel {
+    -webkit-flex:2 0px;
+    -ms-flex: 2 0px;
     flex: 2 0px;
   }
 
   #asideleft {
+    -webkit-order: 1;
+    -ms-order: 1;
     order: 1;
   }
 
   #mission_panel {
+     -webkit-order: 2;
+    -ms-order: 2;
     order: 2;
   }
 
   #asideright {
+     -webkit-order: 3;
+    -ms-order: 3;
     order: 3;
   }
 }
