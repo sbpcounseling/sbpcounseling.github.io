@@ -315,9 +315,9 @@ display: -webkit-flex;
 }
 @media all and (min-width: 800px) {
   #mission_panel {
-    -webkit-flex:2 0px;
-    -ms-flex: 2 0px;
-    flex: 2 0px;
+    -webkit-flex:3 0px;
+    -ms-flex: 3 0px;
+    flex: 3 0px;
   }
 
   #asideleft {
