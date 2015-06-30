@@ -42,8 +42,8 @@ body{
 header{
 background-color: #383838;
 width: 100%;
-min-height: 100px;
 padding: 30px 0px;
+height: 50%;
 }
 
 /* ----------- End of General CSS ---------- */
@@ -285,6 +285,48 @@ display: flex;
 -webkit-flex-flow: row wrap;
 flex-direction: row;
 flex-wrap: wrap;
+flex: 1 50%;
+}
+
+#first_content_panel span{
+color: white;
+}
+
+#first_content_panel hr{
+border: solid #ddd;
+border-width: 1px 0 0;
+width: 40px;
+}
+
+#superscript_flex{
+display: flex;
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+}
+
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1 auto;
+  }
+}
+@media all and (min-width: 800px) {
+  #mission_panel {
+    flex: 3 0px;
+  }
+
+  #asideleft {
+    order: 1;
+  }
+
+  #mission_panel {
+    order: 2;
+  }
+
+  #asideright {
+    order: 3;
+  }
 }
 
 #sbplogo{
@@ -309,7 +351,159 @@ text-align: left;
 width: 73%;
 }
 
+.scale{
+position: relative;
+text-shadow: 2px 2px 2px #000;
+top: 160px;
+-webkit-transform: scale(.95);
+  -moz-transform: scale(.95);
+  -ms-transform: scale(.95);
+  -o-transform: scale(.95);
+  transform: scale(.95);
+  -webkit-transition: -webkit-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: -moz-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -ms-transition: -ms-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: -o-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.aside{
+width: 20%;
+}
+
+#mission_panel{
+background: url(../images/monestary.png);
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+#mission_panel:hover{
+background: #383838;
+}
+
+#mission_panel p{
+color: white;
+line-height: 25px;
+margin-left: 50px;
+margin-right: 50px;
+text-indent: 20px;
+text-align: justify;
+opacity: 0;
+}
+
+#mission_panel:hover .scale{
+top:10px;
+-webkit-transform: scale(1.1);
+-moz-transform: scale(1.1);
+-ms-transform: scale(1.1);
+-o-transform: scale(1.1);
+transform: scale(1.1);
+text-shadow: none;
+}
+
+#mission_panel:hover p{
+-webkit-animation: fadein ease 4s forwards; /* Safari and Chrome */
+-moz-animation: fadein ease 4s forwards; /* Firefox */
+-ms-animation: fadein  ease 4s forwards; /* Internet Explorer */
+-o-animation: fadein ease 4s forwards; /* Opera */
+animation: fadein ease 4s forwards;
+-webkit-animation-iteration-count: 1;
+-moz-animation-iteration-count: 1;
+-ms-animation-iteration-count: 1;
+-o-animation-iteration-count: 1;
+animation-iteration-count: 1;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+#asideleft{
+background: url(../images/courtyard.png);
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+#asideright{
+background: url(../images/bench.png);
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.lineleft, .lineright{
+width: 40px;
+}
+
+.lineleft{
+float:left;
+margin-right: -85px;
+margin-top: 16px;
+text-align: right;
+}
+
+.lineright{
+float: right;
+margin-left: -85px;
+margin-top: 16px;
+text-align: left;
+}
+
+.panel_superscript{
+font-size: 25px;
+font-style: italic;
+font-weight: 100;
+margin-bottom: -20px;
+text-align: center;
+text-transform: uppercase;
+display: block;
+width: 50%;
+}
+
+.panel_title_text{
+clear: both;
+display: block;
+text-align: center;
+font-size: 40px;
+font-weight: 700;
+}
+
+
 /* ----------- End of First Content Panel CSS ---------- */
+
+
+
+
+
+
 
 
 /*------MEDIA QUERY CSS------*/
