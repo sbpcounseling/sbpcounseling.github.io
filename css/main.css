@@ -383,7 +383,6 @@ top: 160px;
 }
 
 #mission_panel{
-display: block;
 background: url(../images/monestary.png);
 background-position: center center;
 background-size: cover;
@@ -458,7 +457,6 @@ animation-iteration-count: 1;
 
 
 #asideleft{
-display: block;
 background: url(../images/courtyard.png);
 background-position: center center;
 background-size: cover;
@@ -466,7 +464,6 @@ background-repeat: no-repeat;
 }
 
 #asideright{
-display: block;
 background: url(../images/bench.png);
 background-position: center center;
 background-size: cover;
