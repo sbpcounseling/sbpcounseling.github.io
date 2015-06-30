@@ -308,12 +308,12 @@ display: -webkit-flex;
 
 @media all and (min-width: 600px) {
   .aside {
-    flex: 1 auto;
+    flex: 3 auto;
   }
 }
 @media all and (min-width: 800px) {
   #mission_panel {
-    flex: 2 0px;
+    flex: 5 0px;
   }
 
   #asideleft {
