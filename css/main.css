@@ -40,7 +40,17 @@ body{
 }
 
 header{
-background-color: #383838;
+background: rgba(56,56,49,0.5);
+background: -moz-linear-gradient(left, rgba(56,56,49,0.9) 0%, rgba(56,56,56,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(56,56,49,0.9)), color-stop(100%, rgba(56,56,56,1)));
+background: -webkit-linear-gradient(left, rgba(56,56,49,0.9) 0%, rgba(56,56,56,1) 100%);
+background: -o-linear-gradient(left, rgba(56,56,49,0.9) 0%, rgba(56,56,56,1) 100%);
+background: -ms-linear-gradient(left, rgba(56,56,49,0.9) 0%, rgba(56,56,56,1) 100%);
+background: linear-gradient(to right, rgba(56,56,49,0.9) 0%, rgba(56,56,56,1) 100%), /* image behind overlay */url(../images/sealback.png);;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383831', endColorstr='#383838', GradientType=1 ); 
+background-position: center left;
+background-attachment: fixed;
+background-repeat: no-repeat;
 width: 100%;
 padding: 30px 0px;
 height:90px;
@@ -308,14 +318,14 @@ display: -webkit-flex;
 
 @media all and (min-width: 600px) {
   .aside {
-    -webkit-flex:1 auto;
-    -ms-flex: 1 auto;
-    flex: 1 auto;
+    -webkit-flex:1 20%;
+    -ms-flex: 1 20%;
+    flex: 1 20%;
   }
 }
 @media all and (min-width: 800px) {
   #mission_panel {
-    -webkit-flex:3 0px;
+    -webkit-flex: 3 0px;
     -ms-flex: 3 0px;
     flex: 3 0px;
   }
@@ -377,10 +387,43 @@ top: 160px;
   transition: transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.aside{
+.lineleft, .lineright{
+width: 40px;
 }
-.introcontent{
+
+.lineleft{
+float:left;
+margin-right: -85px;
+margin-top: 16px;
+text-align: right;
 }
+
+.lineright{
+float: right;
+margin-left: -85px;
+margin-top: 16px;
+text-align: left;
+}
+
+.panel_superscript{
+font-size: 25px;
+font-style: italic;
+font-weight: 100;
+margin-bottom: -20px;
+text-align: center;
+text-transform: uppercase;
+display: block;
+width: 50%;
+}
+
+.panel_title_text{
+clear: both;
+display: block;
+text-align: center;
+font-size: 40px;
+font-weight: 700;
+}
+
 
 #mission_panel{
 background: url(../images/monestary.png);
@@ -391,6 +434,7 @@ background-repeat: no-repeat;
 
 #mission_panel:hover{
 background: #383838;
+opacity: 0.97;
 }
 
 #mission_panel p{
@@ -414,6 +458,145 @@ text-shadow: none;
 }
 
 #mission_panel:hover p{
+-webkit-animation: fadein ease 4s forwards; /* Safari and Chrome */
+-moz-animation: fadein ease 4s forwards; /* Firefox */
+-ms-animation: fadein  ease 4s forwards; /* Internet Explorer */
+-o-animation: fadein ease 4s forwards; /* Opera */
+animation: fadein ease 4s forwards;
+-webkit-animation-iteration-count: 1;
+-moz-animation-iteration-count: 1;
+-ms-animation-iteration-count: 1;
+-o-animation-iteration-count: 1;
+animation-iteration-count: 1;
+}
+
+/*-----Beginning of Aside Left-----*/
+
+#asideleft{
+background: url(../images/courtyard.png);
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+#asideleft:hover{
+background: #383838;
+}
+
+#resources{
+position: relative;
+margin-left: -50px;
+margin-right: -50px;
+}
+
+#resources ul{
+text-align: left;
+}
+
+#resources ul li{
+display: block;
+list-style-type: none;
+width: 450px;
+margin-left: 30px;
+margin-right: 0px;
+}
+
+#resources ul li a{
+color: white;
+text-decoration: none;
+opacity: 0;
+}
+
+#resources ul li a:hover{
+color: #830300;
+}
+
+#asideleft:hover .scale{
+top:10px;
+-webkit-transform: scale(1.1);
+-moz-transform: scale(1.1);
+-ms-transform: scale(1.1);
+-o-transform: scale(1.1);
+transform: scale(1.1);
+text-shadow: none;
+}
+
+#asideleft:hover a{
+-webkit-animation: fadein ease 4s forwards; /* Safari and Chrome */
+-moz-animation: fadein ease 4s forwards; /* Firefox */
+-ms-animation: fadein  ease 4s forwards; /* Internet Explorer */
+-o-animation: fadein ease 4s forwards; /* Opera */
+animation: fadein ease 4s forwards;
+-webkit-animation-iteration-count: 1;
+-moz-animation-iteration-count: 1;
+-ms-animation-iteration-count: 1;
+-o-animation-iteration-count: 1;
+animation-iteration-count: 1;
+}
+
+#asideleft:hover li{
+-webkit-animation: fadein ease 4s forwards; /* Safari and Chrome */
+-moz-animation: fadein ease 4s forwards; /* Firefox */
+-ms-animation: fadein  ease 4s forwards; /* Internet Explorer */
+-o-animation: fadein ease 4s forwards; /* Opera */
+animation: fadein ease 4s forwards;
+-webkit-animation-iteration-count: 1;
+-moz-animation-iteration-count: 1;
+-ms-animation-iteration-count: 1;
+-o-animation-iteration-count: 1;
+animation-iteration-count: 1;
+}
+
+
+/*-----End of Aside Left-----*/
+
+
+/*-----Beginning of Aside Right-----*/
+
+#asideright{
+background: url(../images/bench.png);
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+#asideright:hover{
+background: #383838;
+}
+
+#asideright p, h3{
+color: white;
+margin-left: 50px;
+margin-right: 50px;
+margin-top: 20px;
+opacity: 0;
+text-align: center;
+}
+
+#asideright:hover .scale{
+top:10px;
+-webkit-transform: scale(1.1);
+-moz-transform: scale(1.1);
+-ms-transform: scale(1.1);
+-o-transform: scale(1.1);
+transform: scale(1.1);
+text-shadow: none;
+}
+
+#asideright:hover p{
+-webkit-animation: fadein ease 4s forwards; /* Safari and Chrome */
+-moz-animation: fadein ease 4s forwards; /* Firefox */
+-ms-animation: fadein  ease 4s forwards; /* Internet Explorer */
+-o-animation: fadein ease 4s forwards; /* Opera */
+animation: fadein ease 4s forwards;
+-webkit-animation-iteration-count: 1;
+-moz-animation-iteration-count: 1;
+-ms-animation-iteration-count: 1;
+-o-animation-iteration-count: 1;
+animation-iteration-count: 1;
+}
+
+#asideright:hover h3{
 -webkit-animation: fadein ease 4s forwards; /* Safari and Chrome */
 -moz-animation: fadein ease 4s forwards; /* Firefox */
 -ms-animation: fadein  ease 4s forwards; /* Internet Explorer */
@@ -456,56 +639,6 @@ animation-iteration-count: 1;
 }
 
 
-#asideleft{
-background: url(../images/courtyard.png);
-background-position: center center;
-background-size: cover;
-background-repeat: no-repeat;
-}
-
-#asideright{
-background: url(../images/bench.png);
-background-position: center center;
-background-size: cover;
-background-repeat: no-repeat;
-}
-
-.lineleft, .lineright{
-width: 40px;
-}
-
-.lineleft{
-float:left;
-margin-right: -85px;
-margin-top: 16px;
-text-align: right;
-}
-
-.lineright{
-float: right;
-margin-left: -85px;
-margin-top: 16px;
-text-align: left;
-}
-
-.panel_superscript{
-font-size: 25px;
-font-style: italic;
-font-weight: 100;
-margin-bottom: -20px;
-text-align: center;
-text-transform: uppercase;
-display: block;
-width: 50%;
-}
-
-.panel_title_text{
-clear: both;
-display: block;
-text-align: center;
-font-size: 40px;
-font-weight: 700;
-}
 
 
 /* ----------- End of First Content Panel CSS ---------- */
