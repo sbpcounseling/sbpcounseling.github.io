@@ -378,13 +378,14 @@ text-align: left;
 }
 
 .panel_superscript{
+display: block;
 font-size: 2vw;
 font-style: italic;
 font-weight: 100;
 margin-bottom: -10px;
 text-align: center;
 text-transform: uppercase;
-width: 60%;
+width: 100%;
 }
 
 .panel_title_text{
