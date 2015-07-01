@@ -314,39 +314,8 @@ display: -webkit-box;
 display: -moz-box;
 display: -ms-flexbox;
 display: -webkit-flex;
-}
-
-@media all and (min-width: 600px) {
-  .aside {
-    -webkit-flex:1 20%;
-    -ms-flex: 1 20%;
-    flex: 1 20%;
-  }
-}
-@media all and (min-width: 800px) {
-  #mission_panel {
-    -webkit-flex: 3 0px;
-    -ms-flex: 3 0px;
-    flex: 3 0px;
-  }
-
-  #asideleft {
-    -webkit-order: 1;
-    -ms-order: 1;
-    order: 1;
-  }
-
-  #mission_panel {
-     -webkit-order: 2;
-    -ms-order: 2;
-    order: 2;
-  }
-
-  #asideright {
-     -webkit-order: 3;
-    -ms-order: 3;
-    order: 3;
-  }
+align-content: center;
+justify-content: center;
 }
 
 #sbplogo{
@@ -388,32 +357,33 @@ top: 160px;
 }
 
 .lineleft, .lineright{
-width: 40px;
+display: block;
+width: 2vw;
 }
 
 .lineleft{
 float:left;
-margin-right: -85px;
-margin-top: 16px;
+margin-right: -6vw;
+margin-top: 3vh;
 text-align: right;
 }
 
 .lineright{
 float: right;
-margin-left: -85px;
-margin-top: 16px;
+margin-left: -6vw;
+margin-top: 3vh;
 text-align: left;
 }
 
 .panel_superscript{
-font-size: 25px;
+font-size: 2vw;
 font-style: italic;
 font-weight: 100;
-margin-bottom: -20px;
+margin-bottom: -10px;
 text-align: center;
 text-transform: uppercase;
 display: block;
-width: 50%;
+width: 60%;
 }
 
 .panel_title_text{
@@ -426,6 +396,7 @@ font-weight: 700;
 
 
 #mission_panel{
+display: block;
 background: url(../images/monestary.png);
 background-position: center center;
 background-size: cover;
@@ -473,6 +444,7 @@ animation-iteration-count: 1;
 /*-----Beginning of Aside Left-----*/
 
 #asideleft{
+display: block;
 background: url(../images/courtyard.png);
 background-position: center center;
 background-size: cover;
@@ -484,30 +456,22 @@ background: #383838;
 }
 
 #resources{
-position: relative;
-margin-left: -50px;
-margin-right: -50px;
-}
-
-#resources ul{
-text-align: left;
-}
-
-#resources ul li{
-display: block;
-list-style-type: none;
-width: 450px;
-margin-left: 30px;
-margin-right: 0px;
-}
-
-#resources ul li a{
 color: white;
-text-decoration: none;
+display: block;
+font-size: 16px;
+margin: 50px 0;
 opacity: 0;
+text-align: center;
+text-decoration: none;
+width: 100%;
 }
 
-#resources ul li a:hover{
+#resources a {
+color: #ffffff;
+text-decoration: none;
+}
+
+#resources a:hover{
 color: #830300;
 }
 
@@ -534,7 +498,7 @@ animation: fadein ease 4s forwards;
 animation-iteration-count: 1;
 }
 
-#asideleft:hover li{
+#asideleft:hover div{
 -webkit-animation: fadein ease 4s forwards; /* Safari and Chrome */
 -moz-animation: fadein ease 4s forwards; /* Firefox */
 -ms-animation: fadein  ease 4s forwards; /* Internet Explorer */
@@ -639,7 +603,80 @@ animation-iteration-count: 1;
 }
 
 
+/*----Responsiveness for first_content_panel-----*/
+@media all and (max-width:1200px){
+    #first_content_panel{
+    -webkit-flex-flow: column;
+    flex-direction: column;
+    }
+    #mission_content > p{
+    font-size: 12px;
+    }
+    
+    #resources {
+    position: relative;
+    display: table;
+    font-size: 12px;
+    margin: 20px 0;
+    }
 
+    .introcontent, .aside, header{
+    min-height: 180px;
+    max-height: 900px;
+    }
+    #asideright p, h3{
+    font-size: 16px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+  #mission_panel {
+    -webkit-flex: 1 100px;
+    -ms-flex: 1 100px;
+    flex: 1 100px;
+  }
+
+  #asideleft {
+    -webkit-flex: 1 100px;
+    -ms-flex: 1 100px;
+    flex: 1 100px;
+    -webkit-order: 1;
+    -ms-order: 1;
+    order: 1;
+  }
+
+  #mission_panel {
+     -webkit-order: 2;
+    -ms-order: 2;
+    order: 2;
+  }
+
+  #asideright {
+    -webkit-flex: 1 100px;
+    -ms-flex: 1 100px;
+    flex: 1 100px;
+     -webkit-order: 3;
+    -ms-order: 3;
+    order: 3;
+  }
+}
+
+@media all and (min-width: 1360px) and (max-width: 1577px) {
+
+    #resources{
+    font-size: 14px;
+    }
+    
+}
+
+@media all and (min-width: 350px) and (max-width: 1359px) {
+
+    #resources {
+    font-size: 12px;
+    }
+    
+}
+/*---- End of Responsiveness for first_content_panel-----*/
 
 /* ----------- End of First Content Panel CSS ---------- */
 
@@ -671,6 +708,18 @@ animation-iteration-count: 1;
     }
 }
 
+@media screen and (max-width: 420px) and (max-height: 1100px){
+    .panel_superscript{
+    font-size: 7vw;
+    }
+}
+
+@media screen and (max-width: 600px) and (max-height: 1100px){
+    .panel_superscript{
+    font-size: 6vw;
+    }
+}
+
 @media screen and (max-width: 742px) and (max-height: 1110px){
 /*------Cellphone CSS------*/
 
@@ -684,6 +733,9 @@ animation-iteration-count: 1;
     top: 400px;
     font-size: 14px;
     font-weight: 600;
+    }
+    .panel_superscript{
+    font-size: 4vw;
     }
 }
 
@@ -756,6 +808,10 @@ animation-iteration-count: 1;
 /*------Beginning of Small Browser CSS------*/
 @media screen and (max-width: 850px) and (max-height: 1100px){
 
+    #header{
+    height: 140px;
+    }
+        
     #sbplogo{
     margin: 0 auto;
     width: 100%;
@@ -763,10 +819,13 @@ animation-iteration-count: 1;
     
     #text_welcome{
     margin: 20px 10px 10px 33px;
-    text-align: left;
+    text-align: center;
     width: 90%;
     }
     
+    #asideright p, h3{
+    font-size: 14px;
+    }
 }
 
 /*------End of Small Browser CSS------*/
