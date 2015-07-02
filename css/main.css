@@ -727,7 +727,6 @@ display: -webkit-flex;
 display: flex;
 flex-direction: column;
 -webkit-flex-flow: column;
-height: 100vh;
 }
 
 #landing_title_container2{
@@ -777,10 +776,181 @@ background-color: #383838;
 }
 
 #overview{
-width: 50%;
+display: block;
+margin: 25px 400px 60px;
+text-indent: 50px;
 }
 
-#staff{width: 50%}
+#staff{
+align-content: space-around;
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-flex-flow: row wrap;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+#staff_pcard{
+display: block;
+margin: 1rem;
+background: rgba(255,255,255,0.8);
+border-radius: 0.2rem;
+box-shadow: inset -0.4rem 0.4rem 0 0, inset 0.4rem -0.4rem 0 0;
+min-width: 300px;
+padding: 1rem;
+color: #333;
+flex: 1;
+}
+
+#staffmember_name {
+font-family: Open Sans Condensed, sans-serif;
+font-size: 0.7rem;
+text-transform: uppercase;
+text-align: center;
+letter-spacing: 0.1rem;
+margin-bottom: 1.5rem;
+}
+.member_info {
+  font-family: Open Sans, sans-serif;
+  font-size: 1.08rem;
+  margin-bottom: 1.8rem;
+  text-indent:0px;
+  text-align: center;
+}
+#staffavatar {
+  display: block;
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+  margin: -5rem auto 0 auto;
+  text-align: center;
+  overflow: hidden;
+  perspective: 1200px;
+}
+#staffavatar:hover #circle-flip {
+  transform: rotateY(180deg);
+}
+@keyframes flip {
+  10% {
+    transform: rotateY(180deg);
+  }
+  90% {
+    transform: rotateY(180deg);
+  }
+}
+#circle-flip {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 500ms;
+  animation: flip 3s;
+  animation-delay: 0.5s;
+}
+.front, .back, .bottom {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+#staffavatar .front {
+  background: url("http://www.ericsadowski.com/images/profile.jpg") #DDD;
+  background-size: cover;
+  border-radius: 50%;
+}
+#staffavatar .back {
+  background: url("http://www.ericsadowski.com/images/email.png") #FFF;
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-position: center 35%;
+  line-height: 11rem;
+  color: #666;
+  font-family: "Roboto Condensed", "Arial";
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.08rem;
+  border-radius: 50%;
+  transform: rotateY(180deg);
+}
+.app_button_container {
+  position: relative;
+  perspective: 1200px;
+}
+.button {
+  display: block;
+  height: 3.5rem;
+  width: 13rem;
+  margin: 0 auto 1.4rem auto;
+  transform-style: preserve-3d;
+  transform-origin: 50% 25px -25px; 
+  transition: all 300ms;
+  animation: underflip 3s;
+  animation-delay: 4s;
+}
+.button:hover {
+  transform: rotateX(90deg);
+}
+@keyframes underflip {
+  10% {
+    transform: rotateX(90deg);
+  }
+  90% {
+    transform: rotateX(90deg);
+  }
+}
+.first.button .front {
+  background: url("http://www.ericsadowski.com/images/codepen.png") #BBB;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.first.button .bottom {
+  background: #666;
+  white-space: nowrap;
+}
+.first.button .bottom::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: -10px;
+}
+
+.first.button .front span {
+  color: #FFF;
+  font-family: "Roboto Condensed", "Arial";
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.07rem;
+  margin-top: 7px;
+  vertical-align: middle;
+  display: block;
+  white-space: normal;
+  padding: 0.3rem;
+}
+
+.first.button .bottom span {
+  color: #FFF;
+  font-family: "Roboto Condensed", "Arial";
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.07rem;
+  vertical-align: middle;
+  display: inline-block;
+  white-space: normal;
+  padding: 0.3rem;
+}
+.button .bottom {
+  transform: rotateX(-90deg) translateY(25px) translateZ(25px);
+}
 
 
 
