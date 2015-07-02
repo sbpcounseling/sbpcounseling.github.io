@@ -65,6 +65,7 @@ height:90px;
 background-color: white;
 border-radius: 0.4rem 0.4rem 0.2rem 0.2rem;
 overflow: hidden;
+z-index: 100;
 }
 
 #landing_panel{
@@ -77,6 +78,8 @@ background-position: top left;
 background-attachment: fixed;
 height: 100vh;
 padding: 3rem;
+position: relative;
+z-index: 100;
 }
 
 #landing_title, #landing_subtitle{
@@ -296,6 +299,8 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 flex: 1 50%;
+position: relative;
+z-index: 100;
 }
 
 #first_content_panel span{
@@ -726,17 +731,19 @@ display: -webkit-flex;
 display: flex;
 flex-direction: column;
 -webkit-flex-flow: column;
+height: 100vh;
+position: relative;
+z-index: 1
 }
 
 #landing_title_container2{
-position: static;
+top: .5rem;
+position: fixed;
 width: 100%;
 height: 300px;
 }
 
 #landing_title_two, #landing_subtitle_two{
-display: table;
-position: static;
 color: #383838;
 font-family: Open Sans Condensed, sans-serif;
 font-weight: 700;
@@ -774,7 +781,10 @@ background-color: #383838;
 }
 
 #overview{
+top: 20rem;
+position: fixed;
 display: block;
+line-height: 25px;
 margin: -50px 400px 60px;
 text-indent: 50px;
 }
@@ -789,6 +799,8 @@ display: flex;
 -webkit-flex-flow: row wrap;
 flex-direction: row;
 flex-wrap: wrap;
+position: fixed;
+top: 37rem;
 }
 
 #staff_pcard{
@@ -971,6 +983,114 @@ margin-bottom: 1.5rem;
 /* ----------- End of Overview/ Staff Panel CSS ---------- */
 
 
+/* ----------- Beginning of Services Panel CSS ---------- */
+
+#services{
+background: #383838;
+position: relative;
+z-index: 100;
+}
+
+#landing_title_container3{
+margin-top: 50px;
+width: 100%;
+height: 300px;
+}
+
+#landing_title_three, #landing_subtitle_three{
+color: white;
+font-family: Open Sans Condensed, sans-serif;
+font-weight: 700;
+text-align: center;
+}
+
+#landing_title_three{
+display: block;
+font-size: 4vw;
+margin: 150px auto 25px;
+text-transform: uppercase;
+}
+
+#landing_subtitle_three{
+display: block;
+margin: 0 auto;
+width: 300px;
+}
+
+.grow_border_three{
+right: 0;
+left: 0;
+margin: 0 auto;
+width: 50vw;
+padding: 2rem;
+letter-spacing: 10px;
+box-shadow: inset -0.4rem 0.4rem 0 0, inset 0.4rem -0.4rem 0 0;
+}
+
+.grow_border_three:before, .grow_border_three:after{
+content: "";
+height: 0.4rem;
+width:0%;
+background-color: white;
+}
+
+.services_wrap {
+  backface-visibility: hidden;
+  position: relative;
+  display: -webkit-flex;
+  -webkit-flex-flow: column;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  -webkit-flex-wrap: wrap;
+}
+
+#counseling_services {
+  display: -webkit-flex;
+  -webkit-flex-flow: row;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+}
+
+#counseling_services > div {
+  min-width: 220px;
+  min-height: 220px;
+  display: -webkit-flex;
+  -webkit-flex-flow: row;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  overflow: hidden;
+  z-index: 100;
+  transition: 0.25s;
+}
+#counseling_services > div:hover {
+  backface-visibility: hidden;
+  z-index: 200;
+  background: #FE9F6D;
+  transform: scale(1.1);
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.4);
+}
+
+.rose {
+  background: #E55C50;
+    display: block;
+    text-align: center;
+    width: 260px;
+}
+
+.green {
+background: #A6C7A3;
+display: block;
+text-align: center;
+width: 260px;
+}
+
+@media only screen and (min-width: 700px) {
+  section {
+    -webkit-flex-flow: row;
+  }
+}
+
+
 
 
 
@@ -1044,6 +1164,12 @@ top: 280px;
 font-size: 8px;
 letter-spacing: 0px;
 }
+ 
+#landing_title_three{
+top: 280px;
+font-size: 8px;
+letter-spacing: 0px;
+}
     
 }
 
@@ -1074,7 +1200,7 @@ letter-spacing: 0px;
 @media screen and (max-width: 742px) and (max-height: 1110px){
 /*------Cellphone CSS------*/
 
-    #landing_title, #landing_title_two{
+    #landing_title, #landing_title_two, #landing_title_three{
     top: 300px;
     font-size: 20px;
     letter-spacing: 1px;
@@ -1137,7 +1263,7 @@ background-repeat: no-repeat;
 /*------For all devices smaller than an iPhone 6------*/
 @media screen and (max-width: 670px) and (max-height: 395px){
 
-    #landing_title, #landing_title_two{
+    #landing_title, #landing_title_two, #landing_title_three{
     top: 120px;
     font-size: 20px;
     letter-spacing: 1px;
@@ -1163,7 +1289,7 @@ background-repeat: no-repeat;
     text-indent: -10px;
     }
     
-    #landing_title, #landing_title_two{
+    #landing_title, #landing_title_two, #landing_title_three{
     top: 280px;
     font-size: 40px;
     letter-spacing: 4px;
@@ -1192,7 +1318,7 @@ text-indent: 50px;
 /*------Nexus 7 Tablet View------*/
 @media screen and (min-width: 960px) and (max-width: 1260px) and (max-height: 601px){
 
-    #landing_title, #landing_title_two{
+    #landing_title, #landing_title_two, #landing_title_three{
     top: 200px;
     font-size: 40px;
     letter-spacing: 4px;
