@@ -379,8 +379,8 @@ text-align: left;
 }
 
 .panel_superscript{
+font-family: Open Sans Condensed, sans-serif;
 font-size: 2vw;
-font-style: italic;
 font-weight: 100;
 margin-bottom: -10px;
 text-align: center;
@@ -390,6 +390,7 @@ width: 60%;
 }
 
 .panel_title_text{
+font-family: Open Sans Condensed, sans-serif;
 clear: both;
 display: block;
 text-align: center;
@@ -413,6 +414,7 @@ opacity: 0.97;
 
 #mission_panel p{
 color: white;
+font-family: Open Sans, sans-serif;
 line-height: 25px;
 margin-left: 50px;
 margin-right: 50px;
@@ -461,6 +463,7 @@ background: #383838;
 #resources{
 color: white;
 display: block;
+font-family: Open Sans, sans-serif;
 font-size: 16px;
 margin: 50px 0;
 opacity: 0;
@@ -712,6 +715,76 @@ animation-iteration-count: 1;
 /*---- End of Responsiveness for first_content_panel-----*/
 
 /* ----------- End of First Content Panel CSS ---------- */
+
+
+/* ----------- Beginning of Overview/ Staff Panel CSS ---------- */
+
+#overview_staff{
+display: -webkit-flexbox;      /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+display: -ms-flexbox;      /* TWEENER - IE 10 */
+display: -webkit-flex;
+display: flex;
+flex-direction: column;
+-webkit-flex-flow: column;
+height: 100vh;
+}
+
+#landing_title_container2{
+position: static;
+width: 100%;
+height: 300px;
+}
+
+#landing_title_two, #landing_subtitle_two{
+display: table;
+position: static;
+color: #383838;
+font-family: Open Sans Condensed, sans-serif;
+font-weight: 700;
+text-align: center;
+}
+
+#landing_title_two{
+display: block;
+font-size: 4vw;
+margin: 100px auto 25px;
+text-transform: uppercase;
+}
+
+#landing_subtitle_two{
+display: block;
+margin: 0 auto;
+width: 300px;
+}
+
+.grow_border_two{
+right: 0;
+left: 0;
+margin: 0 auto;
+width: 50vw;
+padding: 2rem;
+letter-spacing: 10px;
+text-indent: 10px;
+box-shadow: inset -0.4rem 0.4rem 0 0, inset 0.4rem -0.4rem 0 0;
+}
+
+.grow_border_two:before, .grow_border_two:after{
+content: "";
+height: 0.4rem;
+width:0%;
+background-color: #383838;
+}
+
+#overview{
+width: 50%;
+}
+
+#staff{width: 50%}
+
+
+
+/* ----------- End of Overview/ Staff Panel CSS ---------- */
 
 
 
