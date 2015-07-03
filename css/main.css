@@ -68,7 +68,7 @@ background-attachment: fixed;
 height: 100vh;
 padding: 3rem;
 position: relative;
-z-index: 200;
+z-index: 300;
 }
 
 #landing_title, #landing_subtitle{
@@ -291,7 +291,7 @@ flex-direction: row;
 flex-wrap: wrap;
 flex: 1 50%;
 position: relative;
-z-index: 200;
+z-index: 400;
 }
 
 #first_content_panel span{
@@ -978,7 +978,7 @@ display: flex;
 -webkit-flex-flow: column;
 flex-direction: column;
 flex-wrap: wrap;
-margin-bottom: 750px;
+margin-bottom: 350px;
 position: relative;
 z-index: 100;
 background: rgba(56,56,56,0.9);
@@ -995,7 +995,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383838', end
 -webkit-box-shadow: -1px 10px 14px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: -1px 10px 14px 0px rgba(0,0,0,0.75);
 box-shadow: -1px 10px 14px 0px rgba(0,0,0,0.75);
-z-index: 200;
+z-index: 700;
 }
 
 
@@ -1144,8 +1144,33 @@ height: auto;
 position: fixed;
 bottom: 0;
 width: 100%;
-z-index: 100;
+z-index: 400;
 }
+
+#last_button{
+background: #382027;
+-webkit-box-shadow: -1px 10px 14px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 10px 14px 0px rgba(0,0,0,0.75);
+box-shadow: -1px 10px 14px 0px rgba(0,0,0,0.75);
+display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+display: -ms-flexbox;      /* TWEENER - IE 10 */
+display: -webkit-flex;
+display: flex;
+flex-direction:row;
+flex-wrap: wrap;
+height: 80px;
+justify-content: center;
+margin: 0 auto;
+width: 300px;
+}
+
+#last_button span{
+color: white;
+display: block;
+margin: 30px auto;
+}
+
 .contactinfo{
 display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
 display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
@@ -1483,3 +1508,18 @@ border: 5px solid white;
 }
 
 /*------End of Small Browser CSS------*/
+
+@media screen and (min-width: 617px) and (max-width: 930px) and (max-height: 1100px){
+
+    #services{
+    margin-bottom: 600px;
+    }
+    
+}
+
+@media screen and (min-width: 300px) and (max-width: 617px) and (max-height: 1100px){
+
+    #services{
+    margin-bottom: 850px;
+    }
+}
