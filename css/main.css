@@ -1170,10 +1170,11 @@ z-index: 500px;
 }
 
 .footertag{
+color: #383838;
 display: inline-block;
 font-size:14px;
 font-weight:200;
-font-family: Sans-serif;
+font-family: Open Sans Condensed, sans-serif;
 letter-spacing:4px;
 left: 0;
 right: 0;
@@ -1184,6 +1185,11 @@ position: relative;
 text-align: center;
 text-transform: uppercase;
 width: 100%;
+}
+
+.footertag a{
+color: #383838;
+text-decoration: none;
 }
 /*-------End of Footer Panel---------*/
 
