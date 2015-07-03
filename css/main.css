@@ -55,8 +55,6 @@ height:90px;
 background-color: white;
 border-radius: 0.4rem 0.4rem 0.2rem 0.2rem;
 overflow: hidden;
-position: relative;
-z-index: 100;
 }
 
 #landing_panel{
@@ -70,7 +68,7 @@ background-attachment: fixed;
 height: 100vh;
 padding: 3rem;
 position: relative;
-z-index: 100;
+z-index: 200;
 }
 
 #landing_title, #landing_subtitle{
@@ -96,6 +94,7 @@ left: 0;
 right:0;
 margin: 0 auto;
 width: 100%;
+z-index: 1;
 }
 
 .grow_border{
@@ -292,7 +291,7 @@ flex-direction: row;
 flex-wrap: wrap;
 flex: 1 50%;
 position: relative;
-z-index: 100;
+z-index: 200;
 }
 
 #first_content_panel span{
@@ -393,7 +392,6 @@ text-align: center;
 font-size: 40px;
 font-weight: 700;
 }
-
 
 #mission_panel{
 display: block;
@@ -716,6 +714,7 @@ animation-iteration-count: 1;
 /* ----------- Beginning of Overview/ Staff Panel CSS ---------- */
 
 #overview_staff{
+background: white;
 display: -webkit-flexbox;      /* OLD - iOS 6-, Safari 3.1-6 */
 display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
 display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -724,7 +723,7 @@ display: flex;
 flex-direction: column;
 -webkit-flex-flow: column;
 position: relative;
-z-index: 200;
+z-index: 500;
 }
 
 #landing_title_container2{
@@ -979,6 +978,7 @@ display: flex;
 -webkit-flex-flow: column;
 flex-direction: column;
 flex-wrap: wrap;
+margin-bottom: 750px;
 position: relative;
 z-index: 100;
 background: rgba(56,56,56,0.9);
@@ -992,7 +992,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383838', end
 background-repeat: no-repeat;
 background-size:contain; 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383838', endColorstr='#383838', GradientType=1 );
-z-index: 100;
+-webkit-box-shadow: -1px 10px 14px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 10px 14px 0px rgba(0,0,0,0.75);
+box-shadow: -1px 10px 14px 0px rgba(0,0,0,0.75);
+z-index: 200;
 }
 
 
@@ -1012,7 +1015,7 @@ text-transform: uppercase;
 
 #landing_subtitle_three{
 display: block;
-margin: 0 auto;
+margin: 0px auto 50px;
 width: 300px;
 }
 
@@ -1033,14 +1036,6 @@ width:0%;
 background-color: white;
 }
 
-#overview2{
-color: white;
-display: block;
-line-height: 25px;
-margin: 30px 400px 30px;
-text-indent: 50px;
-}
-
 .services_wrap {
   backface-visibility: hidden;
   position: relative;
@@ -1049,18 +1044,22 @@ text-indent: 50px;
   -webkit-justify-content: center;
   -webkit-align-items: center;
   -webkit-flex-wrap: wrap;
+margin-bottom: 60px;
 }
 
 #counseling_services {
-  display: -webkit-flex;
-  -webkit-flex-flow: row;
-  -webkit-justify-content: center;
-  -webkit-align-items: center;
+display: -webkit-flex;
+-webkit-flex-flow: row;
+-webkit-justify-content: center;
+-webkit-align-items: center;
+-webkit-flex-flow: row wrap;
+flex-direction: row;
+flex-wrap: wrap;
 }
 
 #counseling_services > div {
-  min-width: 220px;
-  min-height: 220px;
+  min-width: 180px;
+  min-height: 180px;
   display: -webkit-flex;
   -webkit-flex-flow: row;
   -webkit-justify-content: center;
@@ -1090,18 +1089,46 @@ color: white;
 font-family: Open Sans Condensed, sans-serif;
 }
 
-.lightgray {
-background: #848484;
+.maroon {
+background: #382027;
 border: 5px solid white;
 display: block;
 text-align: center;
 width: 260px;
 }
 
-.lightgray h1{
+.maroon h1{
 color: white;
 font-family: Open Sans Condensed, sans-serif;
 }
+
+.margray {
+background: #3D3235;
+border: 5px solid white;
+    display: block;
+    text-align: center;
+    width: 260px;
+}
+
+.margray h1{
+color: white;
+font-family: Open Sans Condensed, sans-serif;
+}
+
+.graymar {
+background: #51464A;
+border: 5px solid white;
+    display: block;
+    text-align: center;
+    width: 260px;
+}
+
+.graymar h1{
+color: white;
+font-family: Open Sans Condensed, sans-serif;
+}
+
+
 
 @media only screen and (min-width: 700px) {
   section {
@@ -1110,8 +1137,55 @@ font-family: Open Sans Condensed, sans-serif;
 }
 
 
+/*-------Beginning of Footer Panel---------*/
 
+footer{
+height: auto;
+position: fixed;
+bottom: 0;
+width: 100%;
+z-index: 100;
+}
+.contactinfo{
+display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+display: -ms-flexbox;      /* TWEENER - IE 10 */
+display: -webkit-flex;
+display: flex;
+flex-direction:row;
+flex-wrap: wrap;
+justify-content: center;
+position: relative;
+bottom: 0px;
+}
 
+.contactinfo div{
+height:120px;
+padding-top: 50px;
+padding-bottom: 50px;
+width: 300px;
+text-align: center;
+position: relative;
+z-index: 500px;
+}
+
+.footertag{
+display: inline-block;
+font-size:14px;
+font-weight:200;
+font-family: Sans-serif;
+letter-spacing:4px;
+left: 0;
+right: 0;
+margin: auto;
+padding-top: 10px;
+padding-bottom: 10px;
+position: relative;
+text-align: center;
+text-transform: uppercase;
+width: 100%;
+}
+/*-------End of Footer Panel---------*/
 
 
 
@@ -1148,6 +1222,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383831', end
 background-position: center left;
 background-attachment: fixed;
 background-repeat: no-repeat;
+border: 5px solid white;
 }
     
 #asideleft{
@@ -1162,6 +1237,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383831', end
 background-position: center left;
 background-attachment: fixed;
 background-repeat: no-repeat;
+border: 5px solid white;
 }
   
 #asideright{
@@ -1176,6 +1252,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383831', end
 background-position: center left;
 background-attachment: fixed;
 background-repeat: no-repeat;
+border: 5px solid white;
 }
 
 #landing_title_two{
@@ -1246,6 +1323,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383831', end
 background-position: top center;
 background-attachment: fixed;
 background-repeat: no-repeat;
+border: 5px solid white;
 }
     
 #asideleft{
@@ -1260,6 +1338,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383831', end
 background-position: center;
 background-attachment: fixed;
 background-repeat: no-repeat;
+border: 5px solid white;
 }
   
 #asideright{
@@ -1274,6 +1353,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383831', end
 background-position: bottom left;
 background-attachment: fixed;
 background-repeat: no-repeat;
+border: 5px solid white;
 }
     
 }
@@ -1294,6 +1374,9 @@ background-repeat: no-repeat;
     font-weight: 600;
     }
 
+    #mission_panel, #asideleft, #asideright{
+    border: 5px solid white;
+    }
 }
 
 /*------End of Cellphone CSS------*/
@@ -1325,11 +1408,15 @@ background-repeat: no-repeat;
     width: 60%;
 }
     
-#overview{
-display: block;
-margin: -50px 200px 60px;
-text-indent: 50px;
+    #overview{
+    display: block;
+    margin: -50px 200px 60px;
+    text-indent: 50px;
 }
+    
+    #mission_panel, #asideleft, #asideright{
+    border: 5px solid white;
+    }
     
 }
 
@@ -1347,6 +1434,11 @@ text-indent: 50px;
     top: 330px;
     font-size: 20px;
     font-weight: 600;
+    }
+
+
+    #mission_panel, #asideleft, #asideright{
+    border: 5px solid white;
     }
 }
 
@@ -1376,6 +1468,10 @@ text-indent: 50px;
     margin: -50px 40px 60px;
     text-align: justify;
     text-indent: 50px;
+    }
+    
+    #mission_panel, #asideleft, #asideright{
+    border: 5px solid white;
     }
     
 }
