@@ -68,7 +68,7 @@ background-attachment: fixed;
 height: 100vh;
 padding: 3rem;
 position: relative;
-z-index: 300;
+z-index: 400;
 }
 
 #landing_title, #landing_subtitle{
@@ -78,6 +78,14 @@ font-weight: 700;
 text-align: center;
 position:fixed;
 z-index: 1;
+}
+
+.kevinbacon{
+visibility: visible;
+}
+
+.hollowman{
+visibility: hidden;
 }
 
 #landing_title{
@@ -1144,7 +1152,7 @@ height: auto;
 position: fixed;
 bottom: 0;
 width: 100%;
-z-index: 400;
+z-index: 300;
 }
 
 #last_button{
@@ -1162,7 +1170,9 @@ flex-wrap: wrap;
 height: 80px;
 justify-content: center;
 margin: 0 auto;
+position: relative;
 width: 300px;
+z-index: 2;
 }
 
 #last_button span{
@@ -1182,6 +1192,7 @@ flex-wrap: wrap;
 justify-content: center;
 position: relative;
 bottom: 0px;
+z-index: 1;
 }
 
 .contactinfo div{
@@ -1191,7 +1202,6 @@ padding-bottom: 50px;
 width: 300px;
 text-align: center;
 position: relative;
-z-index: 500px;
 }
 
 .footertag{
@@ -1324,7 +1334,7 @@ letter-spacing: 0px;
 }
 
 
-@media screen and (max-width: 742px) and (max-height: 1110px){
+@media screen and (max-width: 850px) and (max-height: 1110px){
 /*------Cellphone CSS------*/
 
     #landing_title, #landing_title_two, #landing_title_three{
@@ -1415,7 +1425,7 @@ border: 5px solid white;
 
 /*------Tablet CSS------*/
 
-@media screen and (min-width: 743px) and (max-width: 1280px) and (max-height: 1100px){
+@media screen and (min-width: 830px) and (max-width: 1280px) and (max-height: 1100px){
 /*------Cellphone CSS------*/
 
     .grow_border{
@@ -1424,7 +1434,7 @@ border: 5px solid white;
     
     #landing_title, #landing_title_two, #landing_title_three{
     top: 280px;
-    font-size: 40px;
+    font-size: 43px;
     letter-spacing: 4px;
     }
     

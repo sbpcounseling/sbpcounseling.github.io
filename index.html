@@ -54,6 +54,27 @@ Clients and Publications:
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
     
+<script type="text/javascript">
+$(document).ready(function()
+ 
+{
+ $(function() {
+    var landing_title = $(".kevinbacon");
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+    
+        if (scroll >= 500) {
+            landing_title.removeClass('kevinbacon').addClass("hollowman");
+        } else {
+            landing_title.removeClass("hollowman").addClass('kevinbacon');
+        }
+    });
+});
+// Here goes all the jquery logic
+ 
+}
+    </script>    
+    
 <!--End CSS & JavaScript Links-->
 </head>
 <body>
@@ -62,7 +83,7 @@ Clients and Publications:
     <div id="home"></div>
     <section id="landing_panel">
         <div id="landing_title_container">
-            <div id="landing_title" class="grow_border">
+            <div id="landing_title" class="grow_border" class="kevinbacon">
                 Guidancedepartment
             </div>
             <div id="landing_subtitle">
@@ -360,10 +381,11 @@ Clients and Publications:
 </section>
 
 <footer>
-            <div id="last_button">
-                <span>SCHEDULE AN APPOINTMENT</span>
-            </div>
-    
+    <div class=buttoncontainer>
+        <div id="last_button">
+            <span>SCHEDULE AN APPOINTMENT</span>
+        </div>
+    </div>
 <nav class="contactinfo">
     <div>
         <img src="http://icons.iconarchive.com/icons/dtafalonso/android-lollipop/64/Maps-icon.png" width="48" height="47">
