@@ -48,14 +48,14 @@ html, body, .container, .main { height: 100%;}
     border-radius: 0.4rem 0.4rem 0.2rem 0.2rem;
     background-color: #393939;
     border-radius: 0.2em;
-    left: em;
+    left: -11.8em;
     list-style: none;
-    padding: 10px;
+    padding: 1em;
     position: fixed;
     text-align: center;
-    top: 50px;
+    top: 3.5em;
     transition: .5s all;
-    width: 218px;
+    width: 15em;
     z-index: 2000;
 }
 
@@ -88,7 +88,7 @@ html, body, .container, .main { height: 100%;}
     padding-top: 0.5em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    width: auto;
+    width:11.5em;
 }
 
 .bnav li a{
@@ -102,13 +102,13 @@ html, body, .container, .main { height: 100%;}
     content: '';
     width: 2em;
     height: 1.1em;
-    left: 11.4em;
+    left: 12.3em;
     display: block;
     margin: 0 auto;
     border-top: 0.3em solid white;
     border-bottom:  0.7em double white; 
     opacity: 0.5;
-    top: 8em;
+    top: 7.5em;
     transition: .3s all;
     cursor: pointer;
 }
