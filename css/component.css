@@ -1,0 +1,559 @@
+
+/*
+   WDDS    WDD WDDSWDD   DSWDDSW    DDSWDDSW 
+   DSW    DDSW DSWDDSWD  WDDSWDDS  DSWDDSWDD                                  
+   DSW     DDS DSW   WDD WDD   DSW DSWDDSW   
+   SWDDSWD SWD SWDD  DDS DDSW  SWD  WDDSWDDS  
+   DDSWDDSWDD  DDS   SWD SWD   DDS      DSWD  
+   SWDDSWDDSW  SWD  WDDS DDS  DSWD SWDDSWDDS  
+  WDDSW DSWDD WDDSWDDSW DSWDDSWDD WDDSWDDSW   
+  DSWD   DDSW DSWDDSWD  WDDSWDDS  DSWDDSWD    
+
+Designed by Craig Anthony White II
+Start Date: June 1st, 2015 | Finish Date: ??? 
+--*/
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Needed for a fluid height: */
+html, body, .container, .main { height: 100%;}
+
+/* main wrapper */
+#navmenu { position: absolute; margin: 0 auto;}
+.bottomnav { color: #d0d0d0; text-decoration: none; transition: .2s all;}
+.bottomnav:hover { color: #fff; text-decoration: none; }
+
+.bnav {
+align-content:flex-start;
+-webkit-box-shadow: -17px 14px 17px -4px rgba(34,34,34,1);
+-moz-box-shadow: -17px 14px 17px -4px rgba(34,34,34,1);
+box-shadow: -17px 14px 17px -4px rgba(34,34,34,1);
+display: -webkit-flexbox;      /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+display: -ms-flexbox;      /* TWEENER - IE 10 */
+display: -webkit-flex;
+display: flex;
+flex-direction: column;
+-webkit-flex-flow: column;
+flex-wrap: wrap;
+border-radius: 0.4rem 0.4rem 0.2rem 0.2rem;
+background-color: #513939;
+border-radius: 0.2em;
+left: -11.2em;
+list-style: none;
+padding: 10px;
+position: fixed;
+text-align: center;
+top: 50px;
+transition: .5s all;
+width: 218px;
+z-index: 2000;
+}
+
+.bnav:hover {
+  left: 0em;
+}
+
+.bnav i{
+margin-top: 0.3em;
+display: block; 
+float: left;
+width: 2em;
+height: 1.5em;
+text-align: center;
+}
+
+
+.bnav li {
+display: -webkit-flexbox;      /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+display: -ms-flexbox;      /* TWEENER - IE 10 */
+display: -webkit-flex;
+display: flex;
+flex-direction:column;
+flex-wrap: wrap;
+-webkit-flex-flow: column;
+justify-content: center;
+text-align: left;
+margin-left: -0.5em;
+padding-top: 0.5em;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+width: auto;
+}
+
+.bnav li a{
+display: block;
+font-weight: 100;
+}
+
+.bnav:after {
+  background-color:;
+  position: absolute;
+  content: '';
+  width: 2em;
+  height: 1.1em;
+  left: 11.4em;
+  display: block;
+  margin: 0 auto;
+  border-top: 0.3em solid white;
+  border-bottom:  0.7em double white; 
+  opacity: 0.5;
+  top: 8em;
+  transition: .3s all;
+  cursor: pointer;
+}
+.bnav:hover:after {
+  opacity: 1;
+}
+
+/*-----End of Side Hover Navigation CSS-----*/
+
+
+/*-----Beginning of Landing Page CSS-----*/
+
+#container1{
+    background:
+    /* top, transparent gray, made with gradient */ 
+    linear-gradient(rgba(139, 137, 137, 0.45), rgba(205, 201, 201, 0.45)), /* image behind overlay */ url(../images/520entrance.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+#landing_title, #landing_subtitle{
+    color: #513939;
+    text-align: center;
+    z-index: 1;
+}
+
+#landing_title{
+    display: block;
+    font-size: 4vw;
+    margin-bottom: 1.7rem;
+    margin-top:1.5em;
+    position: fixed;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#landing_subtitle{
+display: block;
+left: 0;
+right:0;
+margin: 0 auto;
+position: fixed;
+top: 19em;
+width: 100%;
+}
+
+.grow_border{
+right: 0;
+left: 0;
+margin: 0 auto;
+width: 50vw;
+padding: 2rem;
+letter-spacing: 10px;
+box-shadow: inset -0.4rem 0 0 0 transparent, inset 0.4rem 0 0 0 transparent;
+-webkit-animation: fadeInBorders 0.48s 1.9s ease-in-out forwards;
+-moz-animation: fadeInBorders 0.48s 1.9s ease-in-out forwards;
+-ms-animation: fadeInBorders 0.48s 1.9s ease-in-out forwards;
+-o-animation: fadeInBorders 0.48s 1.9s ease-in-out forwards;
+animation: fadeInBorders 0.48s 1.9s ease-in-out forwards;
+}
+
+.grow_border:before, .grow_border:after{
+content: "";
+position: absolute;
+height: 0.4rem;
+width:0%;
+background-color: #513939;
+}
+
+.grow_border:before{
+left:0;
+top:0;
+-webkit-animation: grow 2s ease-in-out forwards;
+-moz-animation: grow 2s ease-in-out forwards;
+-ms-animation: grow 2s ease-in-out forwards;
+-o-animation: grow 2s ease-in-out forwards;
+animation: grow 2s ease-in-out forwards;
+}
+
+.grow_border:after{
+bottom:0;
+right:0;
+-webkit-animation: grow 2s ease-in-out forwards;
+-moz-animation: grow 2s ease-in-out forwards;
+-ms-animation: grow 2s ease-in-out forwards;
+-o-animation: grow 2s ease-in-out forwards;
+animation: grow 2s ease-in-out forwards;
+}
+
+@-webkit-keyframes grow{
+    to{
+    width: 100%;
+    }
+}
+@-moz-keyframes grow{
+    to{
+    width: 100%;
+    }
+}
+@-ms-keyframes grow{
+    to{
+    width: 100%;
+    }
+}
+@keyframes grow{
+    to{
+    width: 100%;
+    }
+}
+
+@-webkit-keyframes fadeInBorders {
+    to{
+    box-shadow: inset -0.4rem 0 0 0 #513939, inset 0.4rem 0 0 0 #513939;
+    }
+}
+@-moz-keyframes fadeInBorders {
+    to{
+    box-shadow: inset -0.4rem 0 0 0 #513939, inset 0.4rem 0 0 0 #513939;
+    }
+}
+@-ms-keyframes fadeInBorders {
+    to{
+    box-shadow: inset -0.4rem 0 0 0 #513939, inset 0.4rem 0 0 0 #513939;
+    }
+}
+@keyframes fadeInBorders {
+    to{
+    box-shadow: inset -0.4rem 0 0 0 #513939, inset 0.4rem 0 0 0 #513939;
+    }
+}
+
+
+
+
+
+
+
+#about{
+    display: -webkit-flexbox;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    background: #e9e9e9;
+    border-bottom: 4px dotted #513939;
+    bottom: 0em;
+    width: 100%
+}
+
+#about > a{
+    display: block;
+    height: 6em;
+    width: 15em;
+    background:url(../images%2520/sbpschoollogosmall.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#about > p{
+    color: #513939;
+    display: block;
+    height: 6em;
+    margin: 0em 1em 1em;
+    padding: 1.8em;
+    text-align: center;
+}
+
+.cbp-contentslider {
+	width: 100%;
+	height: 70%;
+	margin: 1em auto;
+	position: relative;
+	border: 4px solid #513939;
+}
+
+.cbp-contentslider > ul {
+	list-style: none;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+.cbp-contentslider > ul li {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	padding: 1em;
+}
+
+/* Whithout JS, we use :target */
+.cbp-contentslider > ul li:target {
+	z-index: 100;
+}
+
+.cbp-contentslider nav {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 3.313em;
+	z-index: 1000;
+	border-top: 4px solid #513939;
+	overflow: hidden;
+}
+
+.cbp-contentslider nav a {
+	float: left;
+	display: block;
+	width: 20%;
+	height: 100%;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	overflow: hidden;
+	color: #513939;
+	background: #e9e9e9;
+	outline: none;
+	text-align: center;
+	line-height: 3;
+	position: relative;
+	padding-left: 3.125em;
+	text-transform: uppercase;
+	border-right: 4px solid #513939;
+	-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.cbp-contentslider nav a span {
+	display: block;
+}
+
+.cbp-contentslider nav a div {
+	display: block;
+    height: 3em;
+   	left: 50%;
+    margin-left: -1.250em;
+    width: 100%;
+}
+
+.cbp-contentslider nav a:last-child {
+	border: none;
+	box-shadow: 1px 0 #513939;/* fills gap caused by rounding */
+}
+
+.cbp-contentslider nav a:hover {
+	background-color: #513939;
+	color: #fff;
+}
+
+.cbp-contentslider nav a.rc-active {
+	background-color: #513939;
+	color: #fff;
+}
+
+
+.cbp-contentslider nav a:hover:before {
+	color: rgba(255,255,255,0.9);
+}
+
+
+.indiv_button{
+width: 100%;
+padding-left: 50px;
+background: url(../images/icon-individual32.png);
+background-repeat: no-repeat;
+background-position: center left;
+}
+
+.refer_button{
+width: 100%;
+padding-left: 50px;
+background: url(../images/icon-referral32.png);
+background-repeat: no-repeat;
+background-position: center left;
+}
+
+.group_button{
+width: 100%;
+padding-left: 50px;
+background: url(../images/icon-group.png);
+background-repeat: no-repeat;
+background-position: center left;
+}
+
+.family_button{
+width: 100%;
+padding-left: 50px;
+background: url(../images/icon-family32.png);
+background-repeat: no-repeat;
+background-position: center left;
+}
+
+.cbp-contentslider h3 {
+	font-size: 4em;
+	height: 2em;
+	line-height: 1.7;
+	font-weight: 300;
+	margin: 0 0.5em 0.3em;
+	position: relative;
+	color: #513939;
+	text-transform: uppercase;
+	text-align: right;
+	letter-spacing: 0.3em;
+	padding: 0 0.2em 0 0;
+}
+
+.individual{
+    background: url(../images/individualcounsel128.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+	border-bottom: 4px solid #513939;
+}
+
+.referrals{
+    background: url(../images/referrals128.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+	border-bottom: 4px solid #513939;
+}
+
+.group{
+    background: url(../images/group128.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+	border-bottom: 4px solid #513939;
+}
+
+.family{
+    background: url(../images/family128.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+	border-bottom: 4px solid #513939;
+}
+
+.cbp-contentslider li > div {
+	position: absolute;
+	top: 9em;
+	bottom: 3.313em;
+	width: 100%;
+	left: 0;
+	padding: 0 1em;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.cbp-contentslider .cbp-content {
+	-webkit-column-rule: 1px dashed #513939;;
+	-moz-column-rule: 1px dashed #513939;;
+	column-rule: 1px dashed #513939;
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	-o-column-count: 2;
+	column-count: 2;
+	-webkit-column-gap: 1em;
+	-moz-column-gap: 1em;
+	-o-column-gap: 1em;
+	column-gap: 1em;
+	vertical-align: top;	
+	padding: 1em 0;
+}
+
+.cbp-contentslider p {
+	color: #513939;
+	padding: 0 0.5em 0.4em;
+	margin: 0;
+	font-size: 1.2em;
+	font-weight: 300;
+	text-align: justify;
+	line-height: 1.6;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 70em) { 
+	.cbp-contentslider p {
+		font-size: 100%;
+	}
+}
+
+@media screen and (max-width: 67.75em) {
+
+	.cbp-contentslider { font-size: 85%; }
+
+	.cbp-contentslider nav a[class^="icon-"]:before, 
+	.cbp-contentslider nav a[class*=" icon-"]:before {
+		left: 50%;
+		margin-left: -1.250em;
+	}
+
+	.cbp-contentslider nav a span {
+		display: none;
+	}
+    
+    .cbp-contentslider nav a div {
+	background-position: center;
+    display: block;
+    height: 3em;
+    margin-left: -1.250em;
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 54em) {
+
+	.cbp-contentslider h3 {
+		font-size: 2em;
+	}
+
+	.cbp-contentslider .cbp-content {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		-o-column-count: 1;
+		column-count: 1;
+	}
+
+	.cbp-contentslider li > div {
+		top: 5em;
+	}
+}
+
+@media screen and (max-width: 35em) { 
+    #landing_title{ text-indent: 1.2em;}
+    .container > header nav a { margin:0 46% 0; float: none; margin-bottom: 2em; text-align: center;}
+	.cbp-contentslider nav a div { margin-left: -2em; padding: 0; width: 3em;}
+	.cbp-contentslider h3[class^="icon-"]:before, 
+	.cbp-contentslider h3[class*=" icon-"]:before { display: none;}
+    .individual, .referrals, .group, .family { background:#e9e9e9;}
+    .grow_border{width: 62vw;}
+}
