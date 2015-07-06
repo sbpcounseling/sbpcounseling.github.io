@@ -626,9 +626,9 @@ background-position: center left;
 }
 
 @media screen and (max-width: 35em) { 
-    #landing_title1{ font-size: 2vw; text-indent: 1.2em;}
-    #landing_subtitle1{ font-size: 3vw;}
-    #about > p{ font-size: 3vw;}
+    #landing_title1{ font-size: 3vw; text-indent: 0em;}
+    #landing_subtitle1{ font-size: 3.5vw;}
+    #about > p{ font-size: 3.5vw;}
     .container > header nav a { margin:0 46% 0; float: none; margin-bottom: 2em; text-align: center;}
 	.cbp-contentslider nav a div { margin-left: -2em; padding: 0; width: 3em;}
 	.cbp-contentslider h3[class^="icon-"]:before, 
