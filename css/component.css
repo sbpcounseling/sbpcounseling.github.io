@@ -33,87 +33,87 @@ html, body, .container, .main { height: 100%;}
 .bottomnav:hover { color: #fff; text-decoration: none; }
 
 .bnav {
-align-content:flex-start;
--webkit-box-shadow: -17px 14px 17px -4px rgba(34,34,34,1);
--moz-box-shadow: -17px 14px 17px -4px rgba(34,34,34,1);
-box-shadow: -17px 14px 17px -4px rgba(34,34,34,1);
-display: -webkit-flexbox;      /* OLD - iOS 6-, Safari 3.1-6 */
-display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-display: -ms-flexbox;      /* TWEENER - IE 10 */
-display: -webkit-flex;
-display: flex;
-flex-direction: column;
--webkit-flex-flow: column;
-flex-wrap: wrap;
-border-radius: 0.4rem 0.4rem 0.2rem 0.2rem;
-background-color: #513939;
-border-radius: 0.2em;
-left: -11.2em;
-list-style: none;
-padding: 10px;
-position: fixed;
-text-align: center;
-top: 50px;
-transition: .5s all;
-width: 218px;
-z-index: 2000;
+    align-content:flex-start;
+    -webkit-box-shadow: -17px 14px 17px -4px rgba(34,34,34,1);
+    -moz-box-shadow: -17px 14px 17px -4px rgba(34,34,34,1);
+    box-shadow: -17px 14px 17px -4px rgba(34,34,34,1);
+    display: -webkit-flexbox;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-flow: column;
+    flex-wrap: wrap;
+    border-radius: 0.4rem 0.4rem 0.2rem 0.2rem;
+    background-color: #513939;
+    border-radius: 0.2em;
+    left: -11.2em;
+    list-style: none;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+    top: 50px;
+    transition: .5s all;
+    width: 218px;
+    z-index: 2000;
 }
 
 .bnav:hover {
-  left: 0em;
+    left: 0em;
 }
 
 .bnav i{
-margin-top: 0.3em;
-display: block; 
-float: left;
-width: 2em;
-height: 1.5em;
-text-align: center;
+    margin-top: 0.3em;
+    display: block; 
+    float: left;
+    width: 2em;
+    height: 1.5em;
+    text-align: center;
 }
 
 
 .bnav li {
-display: -webkit-flexbox;      /* OLD - iOS 6-, Safari 3.1-6 */
-display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-display: -ms-flexbox;      /* TWEENER - IE 10 */
-display: -webkit-flex;
-display: flex;
-flex-direction:column;
-flex-wrap: wrap;
--webkit-flex-flow: column;
-justify-content: center;
-text-align: left;
-margin-left: -0.5em;
-padding-top: 0.5em;
-text-transform: uppercase;
-letter-spacing: 0.1em;
-width: auto;
+    display: -webkit-flexbox;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    -webkit-flex-flow: column;
+    justify-content: center;
+    text-align: left;
+    margin-left: -0.5em;
+    padding-top: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    width: auto;
 }
 
 .bnav li a{
-display: block;
-font-weight: 100;
+    display: block;
+    font-weight: 100;
 }
 
 .bnav:after {
-  background-color:;
-  position: absolute;
-  content: '';
-  width: 2em;
-  height: 1.1em;
-  left: 11.4em;
-  display: block;
-  margin: 0 auto;
-  border-top: 0.3em solid white;
-  border-bottom:  0.7em double white; 
-  opacity: 0.5;
-  top: 8em;
-  transition: .3s all;
-  cursor: pointer;
+    background-color:;
+    position: absolute;
+    content: '';
+    width: 2em;
+    height: 1.1em;
+    left: 11.4em;
+    display: block;
+    margin: 0 auto;
+    border-top: 0.3em solid white;
+    border-bottom:  0.7em double white; 
+    opacity: 0.5;
+    top: 8em;
+    transition: .3s all;
+    cursor: pointer;
 }
 .bnav:hover:after {
-  opacity: 1;
+    opacity: 1;
 }
 
 /*-----End of Side Hover Navigation CSS-----*/
@@ -122,14 +122,9 @@ font-weight: 100;
 /*-----Beginning of Landing Page CSS-----*/
 
 #container1{
-    background:
-    /* top, transparent gray, made with gradient */ 
-    linear-gradient(rgba(139, 137, 137, 0.45), rgba(205, 201, 201, 0.45)), /* image behind overlay */ url(../images/520entrance.jpg);
-    background-size: cover;
+    background: url(../images%2520/520entrance.jpg);
     background-repeat: no-repeat;
     background-position: top left;
-    background-attachment: fixed;
-    position: relative;
     z-index: 1;
 }
 
@@ -271,7 +266,7 @@ animation: grow 2s ease-in-out forwards;
     display: block;
     height: 6em;
     width: 15em;
-    background:url(../images%2520/sbpschoollogosmall.png);
+    background:url(../images/sbpschoollogosmall.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
