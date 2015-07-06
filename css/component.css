@@ -46,9 +46,9 @@ html, body, .container, .main { height: 100%;}
     -webkit-flex-flow: column;
     flex-wrap: wrap;
     border-radius: 0.4rem 0.4rem 0.2rem 0.2rem;
-    background-color: #513939;
+    background-color: #393939;
     border-radius: 0.2em;
-    left: -11.2em;
+    left: em;
     list-style: none;
     padding: 10px;
     position: fixed;
@@ -64,7 +64,7 @@ html, body, .container, .main { height: 100%;}
 }
 
 .bnav i{
-    margin-top: 0.3em;
+    margin: 0em;
     display: block; 
     float: left;
     width: 2em;
@@ -122,8 +122,11 @@ html, body, .container, .main { height: 100%;}
 /*-----Beginning of Landing Page CSS-----*/
 
 #container1{
-    background: url(../images%2520/520entrance.jpg);
+    background:    /* top, transparent gray, made with gradient */ 
+    linear-gradient(rgba(139, 137, 137, 0.45), rgba(205, 201, 201, 0.45)), /* image behind overlay */  url(../images%20/520entrance.jpg);
+    background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: top left;
     z-index: 1;
 }
@@ -145,56 +148,97 @@ html, body, .container, .main { height: 100%;}
 }
 
 #landing_subtitle{
-display: block;
-left: 0;
-right:0;
-margin: 0 auto;
-position: fixed;
-top: 19em;
-width: 100%;
+    display: block;
+    left: 0;
+    right:0;
+    margin: 0 auto;
+    position: fixed;
+    top: 19em;
+    width: 100%;
+}
+
+#landing_title1, #landing_subtitle1{
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+}
+
+#landing_title1{
+    display: block;
+    font-size: 4vw;
+    margin-bottom: 1.7rem;
+    margin-top:1.5em;
+    position: fixed;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#landing_subtitle1{
+    display: block;
+    left: 0;
+    right:0;
+    margin: 0 auto;
+    position: fixed;
+    top: 35vh;
+    width: 100%;
 }
 
 .grow_border{
-right: 0;
-left: 0;
-margin: 0 auto;
-width: 50vw;
-padding: 2rem;
-letter-spacing: 10px;
-box-shadow: inset -0.4rem 0 0 0 transparent, inset 0.4rem 0 0 0 transparent;
--webkit-animation: fadeInBorders 0.48s 1.9s ease-in-out forwards;
--moz-animation: fadeInBorders 0.48s 1.9s ease-in-out forwards;
--ms-animation: fadeInBorders 0.48s 1.9s ease-in-out forwards;
--o-animation: fadeInBorders 0.48s 1.9s ease-in-out forwards;
-animation: fadeInBorders 0.48s 1.9s ease-in-out forwards;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 50vw;
+    padding: 2rem;
+    letter-spacing: 10px;
+    box-shadow: inset -0.4rem 0 0 0 transparent, inset 0.4rem 0 0 0 transparent;
+    -webkit-animation: fadeInBorders 0.48s 1.9s ease-in-out forwards;
+    -moz-animation: fadeInBorders 0.48s 1.9s ease-in-out forwards;
+    -ms-animation: fadeInBorders 0.48s 1.9s ease-in-out forwards;
+    -o-animation: fadeInBorders 0.48s 1.9s ease-in-out forwards;
+    animation: fadeInBorders 0.48s 1.9s ease-in-out forwards;
 }
 
 .grow_border:before, .grow_border:after{
-content: "";
-position: absolute;
-height: 0.4rem;
-width:0%;
-background-color: #513939;
+    content: "";
+    position: absolute;
+    height: 0.4rem;
+    width:0%;
+    background-color: #513939;
 }
 
+
+.border1{
+    color: #fff;
+    -webkit-animation: fadeInBorders1 0.48s 1.9s ease-in-out forwards;
+    -moz-animation: fadeInBorders1 0.48s 1.9s ease-in-out forwards;
+    -ms-animation: fadeInBorders1 0.48s 1.9s ease-in-out forwards;
+    -o-animation: fadeInBorders1 0.48s 1.9s ease-in-out forwards;
+    animation: fadeInBorders1 0.48s 1.9s ease-in-out forwards;
+}
+
+.border1:before, .border1:after{
+    background-color: #fff;
+}
+
+
 .grow_border:before{
-left:0;
-top:0;
--webkit-animation: grow 2s ease-in-out forwards;
--moz-animation: grow 2s ease-in-out forwards;
--ms-animation: grow 2s ease-in-out forwards;
--o-animation: grow 2s ease-in-out forwards;
-animation: grow 2s ease-in-out forwards;
+    left:0;
+    top:0;
+    -webkit-animation: grow 2s ease-in-out forwards;
+    -moz-animation: grow 2s ease-in-out forwards;
+    -ms-animation: grow 2s ease-in-out forwards;
+    -o-animation: grow 2s ease-in-out forwards;
+    animation: grow 2s ease-in-out forwards;
 }
 
 .grow_border:after{
-bottom:0;
-right:0;
--webkit-animation: grow 2s ease-in-out forwards;
--moz-animation: grow 2s ease-in-out forwards;
--ms-animation: grow 2s ease-in-out forwards;
--o-animation: grow 2s ease-in-out forwards;
-animation: grow 2s ease-in-out forwards;
+    bottom:0;
+    right:0;
+    -webkit-animation: grow 2s ease-in-out forwards;
+    -moz-animation: grow 2s ease-in-out forwards;
+    -ms-animation: grow 2s ease-in-out forwards;
+    -o-animation: grow 2s ease-in-out forwards;
+    animation: grow 2s ease-in-out forwards;
 }
 
 @-webkit-keyframes grow{
@@ -239,7 +283,26 @@ animation: grow 2s ease-in-out forwards;
     }
 }
 
-
+@-webkit-keyframes fadeInBorders1 {
+    to{
+    box-shadow: inset -0.4rem 0 0 0 #fff, inset 0.4rem 0 0 0 #fff;
+    }
+}
+@-moz-keyframes fadeInBorders1 {
+    to{
+    box-shadow: inset -0.4rem 0 0 0 #fff, inset 0.4rem 0 0 0 #fff;
+    }
+}
+@-ms-keyframes fadeInBorders1 {
+    to{
+    box-shadow: inset -0.4rem 0 0 0 #fff, inset 0.4rem 0 0 0 #fff;
+    }
+}
+@keyframes fadeInBorders1 {
+    to{
+    box-shadow: inset -0.4rem 0 0 0 #fff, inset 0.4rem 0 0 0 #fff;
+    }
+}
 
 
 
@@ -256,28 +319,31 @@ animation: grow 2s ease-in-out forwards;
     flex-wrap: wrap;
     justify-content: center;
     position: absolute;
-    background: #e9e9e9;
-    border-bottom: 4px dotted #513939;
+    background: #393939;
+    -webkit-box-shadow: 0px -7px 14px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -7px 14px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px -7px 14px -3px rgba(0,0,0,0.75);
     bottom: 0em;
-    width: 100%
+    width: 100%;
+    z-index: 100;
 }
 
 #about > a{
     display: block;
     height: 6em;
     width: 15em;
-    background:url(../images/sbpschoollogosmall.png);
+    background:url(../images%20/sbpschoollogo.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 
 #about > p{
-    color: #513939;
+    color: #fff;
     display: block;
-    height: 6em;
-    margin: 0em 1em 1em;
-    padding: 1.8em;
+    height: 3em;
+    margin: 2.5em 2em 1em;
+    padding: 0em;
     text-align: center;
 }
 
@@ -496,10 +562,18 @@ background-position: center left;
 
 /* Media queries */
 
-@media screen and (max-width: 70em) { 
+@media screen and (max-width: 85em) { 
 	.cbp-contentslider p {
 		font-size: 100%;
 	}
+    #about > p{
+    color: #fff;
+    display: block;
+    height: 3em;
+    margin: 0em 2em 1em;
+    padding: 0em;
+    text-align: center;
+}
 }
 
 @media screen and (max-width: 67.75em) {
@@ -523,6 +597,14 @@ background-position: center left;
     margin-left: -1.250em;
     width: 100%;
 }
+    #about > p{
+    color: #fff;
+    display: block;
+    height: 3em;
+    margin: 0em 2em 3em;
+    padding: 0em;
+    text-align: center;
+}
 }
 
 @media screen and (max-width: 54em) {
@@ -544,7 +626,7 @@ background-position: center left;
 }
 
 @media screen and (max-width: 35em) { 
-    #landing_title{ text-indent: 1.2em;}
+    #landing_title1{ text-indent: 1.2em;}
     .container > header nav a { margin:0 46% 0; float: none; margin-bottom: 2em; text-align: center;}
 	.cbp-contentslider nav a div { margin-left: -2em; padding: 0; width: 3em;}
 	.cbp-contentslider h3[class^="icon-"]:before, 
