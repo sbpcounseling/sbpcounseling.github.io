@@ -180,7 +180,7 @@ html, body, .container, .main { height: 100%;}
     right:0;
     margin: 0 auto;
     position: fixed;
-    top: 35vh;
+    top: 39vh;
     width: 100%;
 }
 
@@ -345,8 +345,19 @@ html, body, .container, .main { height: 100%;}
     z-index: 400;
 }
 
+.sbplogo{
+    background: url(../images%20/sbpschoollogo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 1.5em;
+    padding: 0;
+    margin: 0;
+    
+}
+
 .stop{
-    margin-top: 2em;
+    margin-top: 0.4em;
 }
 
 .sbottom{
@@ -414,6 +425,9 @@ html, body, .container, .main { height: 100%;}
     text-transform: uppercase;
     top: 2em;
 }
+
+
+/*----- Beginning of About Panel CSS -----*/
 
 #basicinfo{
     background: url(../images%20/bench.png);
@@ -495,25 +509,13 @@ html, body, .container, .main { height: 100%;}
 }
 
 
-/*----- End of About CSS -----*/
-
-/*----- Staff Panel -----*/
-
-#staff{
-    background: #e9e9e9;
-    position: relative;
-    z-index: 200;
-}
-
-
-
+/*----- End of About Panel CSS -----*/
 
 
 /*----- Counseling Panel ------*/
 
 #counseling{
     background: #e9e9e9;
-    margin-top: 100vh;
     position: relative;
     z-index: 200;
 }
@@ -736,7 +738,91 @@ background-position: center left;
 }
 
 
+/*---- End of Counseling Services Panel -----*/
 
+/*----- Beginning of Additional Services Panel -----*/
+
+#content_title2{
+    border: 0.11em solid #fff;
+    color: #fff;
+    display: block;
+    font-size: 4vw;
+    padding: 2rem;
+    position: relative;
+    left: 3em;
+    width: 7.5em;
+    text-align: center;
+    text-transform: uppercase;
+    top: 7em;
+}
+
+#otherservices{
+    background: url(../images%20/monestary.png);
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: -webkit-flexbox;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-flow: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    z-index: 300;
+}
+
+#splitright2{
+    background: #513939;
+    display: -webkit-flexbox;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-flow: column;
+    width: 50%;
+}
+
+#splitright2 article h3{
+    font-weight: 100;
+}
+
+#splitleft2{
+    display: -webkit-flexbox;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-flow: column;
+    width: 50%;
+}
+
+.oservices{
+    font-size: em;
+    position: relative;
+}
+
+#addservices{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 100;
+    text-align: justify;
+    text-indent: 3em;
+    margin: 1em 5em;
+}
+
+#addservices h3{
+    text-align: center;
+}
+}
+
+/*----- End of Additional Services Panel -----*/
 
 
 
@@ -850,7 +936,15 @@ background-position: center left;
     display: none;
     }
     
+    #splitleft2{
+    display: none;
+    }
+    
     #splitright{
+    width: 100%;
+    }
+    
+    #splitright#2{
     width: 100%;
     }
     
