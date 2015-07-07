@@ -310,7 +310,7 @@ html, body, .container, .main { height: 100%;}
 /*----- Beginning of Introduction CSS -----*/
 
 #leadcontent{
-    height: 80%;
+    height: 100%;
     opacity: 1;
     position: relative;
     z-index: 300;
@@ -389,6 +389,7 @@ html, body, .container, .main { height: 100%;}
     height: auto;
     padding-left: 5em;
     padding-right: 5em;
+    padding-bottom: 6.7em;
     position: absolute;
     width: 100%;
     z-index: 400;
