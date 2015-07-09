@@ -841,7 +841,215 @@ background-position: center left;
 /*----- End of Additional Services Panel -----*/
 
 
+/*----- Staff Panel CSS -----*/
 
+#staff{
+    display: -webkit-flexbox;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-flow: row wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#landing_title3{
+    display: block;
+    font-size: 3vw;
+    font-weight: 300;
+    margin-top: 3em;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card_container{
+    display: -webkit-flexbox;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-flow: row wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16em;
+    width: 100%;
+}
+
+#staff_pcard{
+    border: 0.2em solid #513939;
+    display: block;
+    height: 20em;
+    margin-left: 3em;
+    margin-top: 7em;
+    width: 20em;
+}
+
+#staffmember_name{
+    color: #513939;
+    display: block;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.member_info{
+    color: #513939;
+    font-weight: 100;
+    padding: 1em;
+}
+
+#staffavatar {
+  display: block;
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+  margin: -5rem auto 0 auto;
+  text-align: center;
+  overflow: hidden;
+  perspective: 1200px;
+}
+#staffavatar:hover #circle-flip {
+  transform: rotateY(180deg);
+}
+@keyframes flip {
+  10% {
+    transform: rotateY(180deg);
+  }
+  90% {
+    transform: rotateY(180deg);
+  }
+}
+#circle-flip {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 500ms;
+  animation: flip 3s;
+  animation-delay: 0.5s;
+}
+.front, .back, .bottom {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+#ivan {
+  background: url("../images%20/lamourt.jpg") #DDD;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+#fig{
+  background: url("../images%20/gfig.jpeg") #DDD;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+#dom{
+  background: url("../images%20/gfig.jpeg") #DDD;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+#staffavatar .back {
+  background: url("http://icons.iconarchive.com/icons/dtafalonso/android-lollipop/64/Gmail-icon.png") #FFF;
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-position: center 35%;
+  line-height: 11rem;
+  color: #666;
+  font-weight: 100;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.08rem;
+  border-radius: 50%;
+  transform: rotateY(180deg);
+}
+.app_button_container {
+  position: relative;
+  perspective: 1200px;
+}
+.button {
+  display: block;
+  height: 3.5rem;
+  width: 13rem;
+  margin: 0 auto 1.4rem auto;
+  transform-style: preserve-3d;
+  transform-origin: 50% 25px -25px; 
+  transition: all 300ms;
+  animation: underflip 3s;
+  animation-delay: 4s;
+}
+
+.button:hover {
+  transform: rotateX(90deg);
+}
+@keyframes underflip {
+  10% {
+    transform: rotateX(90deg);
+  }
+  90% {
+    transform: rotateX(90deg);
+  }
+}
+.first.button .front {
+  background: #513939;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.first.button .bottom {
+  background: #666;
+  white-space: nowrap;
+}
+.first.button .bottom::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: -10px;
+}
+
+.first.button .front span {
+  color: #FFF;
+  font-size: 0.9rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.07rem;
+  margin-top: 1em;
+  vertical-align: middle;
+  display: block;
+  white-space: normal;
+  padding: 0.3rem;
+}
+
+.first.button .bottom span {
+  color: #FFF;
+  font-size: 0.9rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.07rem;
+  vertical-align: middle;
+  display: inline-block;
+  white-space: normal;
+  padding: 0.3rem;
+}
+.button .bottom {
+  transform: rotateX(-90deg) translateY(25px) translateZ(25px);
+}
+
+/*----- End of Staff Panel CSS -----*/
 
 
 
