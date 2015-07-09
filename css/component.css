@@ -138,6 +138,7 @@ html, body, .container, .main { height: 100%;}
     background-position: top left;
     height: 120vh;
     z-index: 1;
+    -webkit-transform: translateZ(0); 
 }
 
 #landing_title, #landing_subtitle{
@@ -148,10 +149,10 @@ html, body, .container, .main { height: 100%;}
 
 #landing_title{
     display: block;
-    font-size: 4vw;
-    margin-bottom: 1.7rem;
-    margin-top:1.5em;
-    position: fixed;
+    font-size: 3vw;
+    font-weight: 300;
+    margin-top:0em;
+    position: absolute;
     text-align: center;
     text-transform: uppercase;
 }
@@ -176,7 +177,7 @@ html, body, .container, .main { height: 100%;}
     display: block;
     font-size: 4vw;
     margin-bottom: 1.7rem;
-    margin-top:1.5em;
+    margin-top: 25vh;
     position: fixed;
     text-align: center;
     text-transform: uppercase;
@@ -188,7 +189,7 @@ html, body, .container, .main { height: 100%;}
     right:0;
     margin: 0 auto;
     position: fixed;
-    top: 39vh;
+    top: 55vh;
     width: 100%;
 }
 
@@ -536,7 +537,7 @@ html, body, .container, .main { height: 100%;}
 .cbp-contentslider {
 	width: 100%;
 	height: 70%;
-	margin: 1em auto;
+	margin: 9em 0em;
 	position: relative;
 	border: 4px solid #513939;
 }
@@ -917,7 +918,7 @@ background-position: center left;
     }
     
     .backcover{
-    height: 50em;
+    height: 100em;
     }
     
     #leadcontent{
@@ -940,6 +941,7 @@ background-position: center left;
     
     
     #basicinfo{
+        margin-top: 0em;
     }
     
     
@@ -999,6 +1001,7 @@ background-position: center left;
     #landing_subtitle1{ font-size: 3.5vw;}
     #about > p{ font-size: 3.5vw;}
     .container > header nav a { margin:0 46% 0; float: none; margin-bottom: 2em; text-align: center;}
+    .cbp-contentslider {margin: 6em 0em 0em 0em;}
 	.cbp-contentslider nav a div { margin-left: -2em; padding: 0; width: 3em;}
 	.cbp-contentslider h3[class^="icon-"]:before, 
 	.cbp-contentslider h3[class*=" icon-"]:before { display: none;}
