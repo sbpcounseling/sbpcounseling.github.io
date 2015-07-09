@@ -959,12 +959,12 @@ background-position: center left;
 }
 
 #staffavatar .back {
-  background: url("http://icons.iconarchive.com/icons/dtafalonso/android-lollipop/64/Gmail-icon.png") #FFF;
+  background: url("http://icons.iconarchive.com/icons/dtafalonso/android-lollipop/64/Gmail-icon.png") #666;
   background-size: 35%;
   background-repeat: no-repeat;
   background-position: center 35%;
   line-height: 11rem;
-  color: #666;
+  color: #fff;
   font-weight: 100;
   font-size: 0.9rem;
   text-transform: uppercase;
