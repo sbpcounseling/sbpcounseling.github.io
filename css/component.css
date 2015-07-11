@@ -921,6 +921,34 @@ background-position: center left;
 #staffavatar:hover #circle-flip {
   transform: rotateY(180deg);
 }
+
+@-webkit-keyframes flip {
+  10% {
+    transform: rotateY(180deg);
+  }
+  90% {
+    transform: rotateY(180deg);
+  }
+}
+
+@-moz-keyframes flip {
+  10% {
+    transform: rotateY(180deg);
+  }
+  90% {
+    transform: rotateY(180deg);
+  }
+}
+
+@-o-keyframes flip {
+  10% {
+    transform: rotateY(180deg);
+  }
+  90% {
+    transform: rotateY(180deg);
+  }
+}
+
 @keyframes flip {
   10% {
     transform: rotateY(180deg);
@@ -985,8 +1013,8 @@ background-position: center left;
 }
 .button {
   display: block;
-  height: 3.5rem;
-  width: 13rem;
+  height: 3.5em;
+  width: 13em;
   margin: 0 auto 1.4rem auto;
   transform-style: preserve-3d;
   transform-origin: 50% 25px -25px; 
@@ -998,6 +1026,34 @@ background-position: center left;
 .button:hover {
   transform: rotateX(90deg);
 }
+
+@-o-keyframes underflip {
+  10% {
+    transform: rotateX(90deg);
+  }
+  90% {
+    transform: rotateX(90deg);
+  }
+}
+
+@-moz-keyframes underflip {
+  10% {
+    transform: rotateX(90deg);
+  }
+  90% {
+    transform: rotateX(90deg);
+  }
+}
+
+@-webkit-keyframes underflip {
+  10% {
+    transform: rotateX(90deg);
+  }
+  90% {
+    transform: rotateX(90deg);
+  }
+}
+
 @keyframes underflip {
   10% {
     transform: rotateX(90deg);
