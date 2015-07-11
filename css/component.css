@@ -962,10 +962,14 @@ background-position: center left;
   height: 100%;
   transform-style: preserve-3d;
   transition: all 500ms;
+  -webkit-animation: flip 3s;
+    -moz-animation: flip 3s;
+    -o-animation: flip 3s;
   animation: flip 3s;
   animation-delay: 0.5s;
 }
 .front, .back, .bottom {
+    display: block;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -1008,6 +1012,9 @@ background-position: center left;
   transform: rotateY(180deg);
 }
 .app_button_container {
+  display: block;height: 3.5em;
+  width: 13em;
+    margin: 0 auto;
   position: relative;
   perspective: 1200px;
 }
