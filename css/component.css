@@ -963,9 +963,12 @@ background-position: center left;
   transform-style: preserve-3d;
   transition: all 500ms;
   -webkit-animation: flip 3s;
-    -moz-animation: flip 3s;
-    -o-animation: flip 3s;
+  -moz-animation: flip 3s;
+  -o-animation: flip 3s;
   animation: flip 3s;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s
   animation-delay: 0.5s;
 }
 .front, .back, .bottom {
@@ -1019,15 +1022,21 @@ background-position: center left;
   perspective: 1200px;
 }
 .button {
-  display: block;
-  height: 3.5em;
-  width: 13em;
-  margin: 0 auto 1.4rem auto;
-  transform-style: preserve-3d;
-  transform-origin: 50% 25px -25px; 
-  transition: all 300ms;
-  animation: underflip 3s;
-  animation-delay: 4s;
+    display: block;
+    height: 3.5em;
+    width: 13em;
+    margin: 0 auto 1.4rem auto;
+    transform-style: preserve-3d;
+    transform-origin: 50% 25px -25px; 
+    transition: all 300ms;
+    -webkit-animation: underflip 3s;
+    -moz-animation: underflip 3s;
+    -o-animation: underflip 3s;
+    animation: underflip 3s;
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    animation-delay: 4s;
 }
 
 .button:hover {
