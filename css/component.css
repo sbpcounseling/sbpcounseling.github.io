@@ -131,7 +131,7 @@ html, body, .container, .main { height: 100%;}
 
 #container1{
     background:    /* top, transparent gray, made with gradient */ 
-    linear-gradient(rgba(139, 137, 137, 0.45), rgba(205, 201, 201, 0.45)), /* image behind overlay */  url(../images%20/520entrance.jpg);
+    linear-gradient(rgba(139, 137, 137, 0.45), rgba(205, 201, 201, 0.45)), /* image behind overlay */  url(../images%20/520entrance.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
