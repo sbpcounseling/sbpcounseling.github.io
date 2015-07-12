@@ -933,10 +933,10 @@ background-position: center left;
 
 @-webkit-keyframes flip {
   10% {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
   }
   90% {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
   }
 }
 
@@ -1025,7 +1025,8 @@ background-position: center left;
   transform: rotateY(180deg);
 }
 .app_button_container {
-  display: block;height: 3.5em;
+  display: block;
+    height: 3.5em;
   width: 13em;
     margin: 0 auto;
   position: relative;
@@ -1074,10 +1075,10 @@ background-position: center left;
 
 @-webkit-keyframes underflip {
   10% {
-    transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
   }
   90% {
-    transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
   }
 }
 
