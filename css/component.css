@@ -993,7 +993,6 @@ background-position: center left;
   background: url("../images%20/lamourt.jpg") #DDD;
   background-size: cover;
   border-radius: 50%;
-  z-index: 2;
 	/* for firefox 31 */
   -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
@@ -1004,7 +1003,6 @@ background-position: center left;
   background-size: cover;
   background-position: center;
   border-radius: 50%;
-      z-index: 2;
 	/* for firefox 31 */
   -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
@@ -1015,7 +1013,6 @@ background-position: center left;
   background-size: cover;
   background-position: center;
   border-radius: 50%;
-  z-index: 2;
 	/* for firefox 31 */
   -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
