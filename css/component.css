@@ -984,6 +984,8 @@ background-position: center left;
 .front, .back, .bottom {
     display: block;
   position: absolute;
+    top: 0;
+	left: 0;
   height: 100%;
   width: 100%;
   backface-visibility: hidden;
@@ -993,6 +995,7 @@ background-position: center left;
   background: url("../images%20/lamourt.jpg") #DDD;
   background-size: cover;
   border-radius: 50%;
+  z-index: 2;
 	/* for firefox 31 */
   -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
@@ -1003,6 +1006,7 @@ background-position: center left;
   background-size: cover;
   background-position: center;
   border-radius: 50%;
+      z-index: 2;
 	/* for firefox 31 */
   -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
@@ -1013,6 +1017,7 @@ background-position: center left;
   background-size: cover;
   background-position: center;
   border-radius: 50%;
+  z-index: 2;
 	/* for firefox 31 */
   -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
