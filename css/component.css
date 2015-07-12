@@ -855,6 +855,7 @@ background-position: center left;
     -webkit-flex-flow: row wrap;
     flex-wrap: wrap;
     height: auto;
+   -webkit-justify-content: center;
     justify-content: center;
     margin-bottom: 5em;
     position: relative;
@@ -1290,7 +1291,7 @@ z-index: 100;
 
 #last_button{
 bottom: -2em;
-background: #382027;
+background: #513939;
 -webkit-box-shadow: -1px 10px 14px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: -1px 10px 14px 0px rgba(0,0,0,0.75);
 box-shadow: -1px 10px 14px 0px rgba(0,0,0,0.75);
@@ -1308,6 +1309,23 @@ position: relative;
 right: 0;
 left: 0;
 width: 300px;
+}
+
+#last_button:hover {
+background: #fff;
+border: 0.2em solid #513939;
+}
+
+#last_button:hover span {
+color: #513939;
+}
+    
+#last_button: active{
+background: #fff;
+border: 0.2em solid #513939;
+-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
 }
 
 #last_button span{
