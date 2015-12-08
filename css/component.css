@@ -320,15 +320,12 @@ html, body, .container, .main { height: 100%;}
 /*----- Beginning of Introduction CSS -----*/
 
 #leadcontent{
-    height: 60%;
-    margin-bottom: 25vh;
+    height: 100%;
     opacity: 1;
-    position: relative;
     z-index: 1000;
 }
 
 .backcover{
-    background: #e9e9e9;
     margin: 0 auto;
     position: absolute;
     height: 300em;
@@ -392,17 +389,13 @@ html, body, .container, .main { height: 100%;}
 }
 
 #lead_p{
-     background:    /* top, transparent gray, made with gradient */ 
-    linear-gradient(rgba(139, 137, 137, 0.15), rgba(205, 201, 201, 0.15));
     color: #513;
     font-weight: 100;
-    height: 50em;
-    padding: 5vh 28vw;
-    position: absolute;
+    margin: auto;
+    padding: 10em 15em;
     text-indent: 4em;
     text-align: justify;
     width: 100%;
-    z-index: 400;
 }
 /*----- End of Introduction CSS ----*/
 
